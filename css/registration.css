@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(255, 209, 122);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+#outer {
+    background-color: white;
+    margin: 50px;
+    padding: 150px 50px 200px 200px;
+    border-radius: 40px;
+    box-shadow:15px 15px 7px rgba(28, 28, 28, 0.9);
+    
+}
+
+#title-1 {
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
+#inner-left {
+    float: left;
+    margin-right: 70px;
+}
+
+#inner-left .left {
+    margin-bottom: 10%;
+    font-size: large;
+    background-color: rgb(234, 233, 233);
+    border: 2px solid rgb(234, 233, 233);
+    border-radius: 4px;
+    color: black;
+    font-weight:400;
+}
+
+::placeholder{
+    color: black;
+    font-weight:400;
+}
+
+div #inner-right {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+/* #inner-right {
+    margin-top: 0%;
+    margin-right: 0;
+    padding-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+} */
+#inner-right .right {
+    margin-top: 0%;
+    margin-bottom: 1.65%;
+    font-size: large;
+    background-color: rgb(234, 233, 233);
+    border: 2px solid rgb(234, 233, 233);
+    border-radius: 4px;
+    color: black;
+    font-weight:400;
+}
+
+#right-img {
+    overflow: auto;
+    float: right;
+    
+    height: 635px;
+    
+    margin-right: 45px;
+    border-radius: 0px 40px 40px 0px;
+}
+
+#title-2 {
+    overflow: auto;
+    float: right;
+    background-image: url("/images/veggies-fruits-1.jpeg");
+    height: 635px;
+    width: 500px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
