@@ -1,0 +1,603 @@
+body {
+  margin: 0;
+  padding: 0;
+
+}
+nav ul {
+  list-style: none;
+  margin-left: 0;
+  margin-top: 0;
+  padding: 12px 10px 0 10px;
+
+}
+
+nav li {
+  display: inline;
+  margin: 5px 10px;
+  color: white;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  margin-top: 0 10px;
+  background-color: #163020; /* 294B29 */
+  font-family: Helvetica, sans-serif;
+  border-bottom: 2px solid black;
+  font-size: 20px;
+  position: fixed;
+  width: 100%;
+   z-index: 1000; 
+ 
+}
+
+nav h3 a:hover {
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255, 1);
+}
+
+nav ul li {
+  color: whitesmoke;
+  padding: 0 20px;
+}
+
+nav ul li a{
+  color: whitesmoke;
+}
+nav ul li a:hover{
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255, 1);
+}
+nav h3{
+  float: left;
+  color: whitesmoke;
+  padding-left: 40px;
+ 
+}
+
+nav ul{
+  overflow: auto;
+  text-align: right;
+  padding-top: 25px;
+  padding-right: 50px;
+  font-weight: bold;
+}
+main{
+  padding-top: 100px;
+  padding-left: 50px;
+}
+
+/* CSS styles for the product page */
+
+#maindiv {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+  
+  .proddet1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  /* .prodimg {
+    background-color: grey;
+  } */
+  
+  .prodtext {
+    margin-left: 50px;
+    margin-top: 50px;
+    padding: 20px;
+    border: 2px solid lightgrey;
+    width: 500px;
+    height: 450px;
+    border-radius: 10px;
+  }
+  .prodtext h2 {
+    font-size: 60px;
+    margin: 0;
+  }
+  .prodtext h3 {
+    font-size: 20px;
+    margin: 5px;
+    padding: 0;
+  }
+  .prodtext div {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .prodtext button {
+    margin-top: 20px;
+    font-size: 30px;
+    padding: 15px 40px;
+    border-radius: 60px;
+    font-weight: bolder;
+    background-color: #163020;
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+    align-items: center;
+  }
+  .prodtext ul {
+    margin-top: 20px;
+    margin-left: 0;
+    padding-left: 25px;
+    list-style: disc;
+  }
+  .prodtext ul li {
+    font-size: 20px;
+    margin: 5px;
+    padding: 0;
+  }
+  .proddet2 {
+    /* Styles for about the item section */
+  }
+  
+
+  /***********************************************************************
+  jQuery Coda-Slider v3.0 - kevinbatdorf.github.com/codaslider
+  Copyright (c) 2012 Kevin Batdorf
+  This plugin available for use in all personal or commercial projects under both MIT and GPL licenses.
+************************************************************************/
+/********************************************
+SASS stylesheet.
+
+No idea what CSS preprocessing is all about? No problem... just use the style.css file instead.
+If you want to learn more, check out this article by Chris Coyier
+
+css-tricks.com/musings-on-preprocessing/
+
+********************************************/
+
+.coda-slider-wrapper {
+  /*******************************************************
+  *
+  * Most common stuff you'll need to change 
+  * will be below this line.
+  *
+  ********************************************************/
+  /******************************************************
+  * 
+  * Main wrapper padding 
+  *
+  *******************************************************/
+  padding: 20px 0; 
+}
+  
+  .coda-slider-wrapper .coda-slider {
+    /******************************************************
+    * 
+    * Inner wrapper styles 
+    *
+    *******************************************************/
+    background: white;
+    /******************************************************
+    * 
+    * Width of the container. Typically you will want to 
+    * match this with the width of the panel as well. 
+    *
+    *******************************************************/
+    width: 600px; 
+    
+  }
+    
+    .coda-slider-wrapper .coda-slider .panel {
+      /******************************************************
+      * 
+      * Width of each individual panel. 
+      * Typically you will want to match this with the width 
+      * of the container as well. 
+      *
+      *******************************************************/
+      width: 600px; 
+    }
+      
+      .coda-slider-wrapper .coda-slider .panel .panel-wrapper {
+        /******************************************************
+        * 
+        * Panel wrapper styles 
+        *
+        *******************************************************/
+        padding: 0; 
+      }
+  
+  .coda-slider-wrapper .coda-nav {
+    /******************************************************
+    * 
+    * Tab styles 
+    *
+    *******************************************************/ 
+  }
+    
+    .coda-slider-wrapper .coda-nav .current {
+      /******************************************************
+      * 
+      * Current tab styles 
+      *
+      *******************************************************/
+      background: #0090FF; 
+    }
+    
+    .coda-slider-wrapper .coda-nav a {
+      /******************************************************
+      * 
+      * Tab styles 
+      *
+      *******************************************************/
+      background: #000;
+      color: #fff;
+      margin-right: 1px;
+      padding: 3px 6px; 
+    }
+    
+    .coda-slider-wrapper .coda-nav a:hover {
+      /******************************************************
+      * 
+      * Tab styles 
+      *
+      *******************************************************/
+      background: #000;
+      color: #fff;
+      text-shadow: none; 
+    }
+  
+  .coda-slider-wrapper .coda-nav-left, .coda-slider-wrapper .coda-nav-right {
+    /******************************************************
+    * 
+    * Arrow Styles 
+    *
+    *******************************************************/ 
+  }
+  .coda-nav-left a{
+    background: url(/img/arrow1.png) no-repeat top left;
+    background-size: 35px;
+  }
+  .coda-nav-right a{
+    background: url(/img/arrow2.png) no-repeat top left;
+    background-size: 35px;
+  }
+    
+    .coda-slider-wrapper .coda-nav-left a, .coda-slider-wrapper .coda-nav-right a {
+      /******************************************************
+      * 
+      * Arrow Styles 
+      *
+      *******************************************************/
+      /* background: #000; */
+      
+      
+      font-size: 0px;
+      padding: 5px;
+      width: 50px; 
+      height: 50px;
+      margin-top: 200px;
+    }
+  
+  .coda-slider-wrapper .coda-nav-left-arrow {
+    /******************************************************
+    * 
+    * Graphical arrow styles 
+    *
+    *******************************************************/
+    width: 25px;
+    height: 25px;
+    background: url(/img/arrow1.png) no-repeat top left; 
+    margin-top:50px;
+  }
+
+.coda-slider-wrapper .coda-nav-left-arrow a {
+    /******************************************************
+    * 
+    * Graphical arrow styles 
+    *
+    *******************************************************/
+    width: 0;
+    height: 0;
+    border:none;
+    background: url(/img/arrow1.png) no-repeat top left; 
+  }
+
+  .coda-slider-wrapper .coda-nav-left-arrow:hover {
+    /************************************************
+    * 
+    * Graphical arrows hover left
+    *
+    *************************************************/
+    background: url(/img/arrow1.png) no-repeat bottom left; 
+  }
+  
+  .coda-slider-wrapper .coda-nav-right-arrow {
+    /******************************************************
+    * 
+    * Graphical arrow styles 
+    *
+    *******************************************************/
+    width: 25px;
+    height: 25px;
+    background: url(/img/arrow1.png) no-repeat top right; 
+    margin-top:50px;
+  }
+.coda-slider-wrapper .coda-nav-right-arrow a {
+    /******************************************************
+    * 
+    * Graphical arrow styles 
+    *
+    *******************************************************/
+    width: 0;
+    height: 0;
+    background: none; 
+    margin-top:0;
+    border:none;
+  }
+
+  .coda-slider-wrapper .coda-nav-right-arrow:hover {
+    /************************************************
+    * 
+    * Graphical arrows hover right
+    *
+    *************************************************/
+    background: url(/img/arrow1.png) no-repeat bottom right; 
+  }
+
+  .coda-slider-wrapper .coda-nav-left-arrow:active, .coda-slider-wrapper .coda-nav-right-arrow:active {
+    /************************************************
+    * 
+    * Graphical arrows active
+    *
+    *************************************************/
+    margin-top: 55px; 
+  }
+  
+  .coda-slider-wrapper .loading {
+    /******************************************************
+    * 
+    * Style for preloader 
+    *
+    *******************************************************/
+    height: 100%;
+    padding: 20px;
+    text-align: center; 
+  }
+
+  
+
+
+.arrows .coda-slider {
+  /******************************************************
+  * 
+  * Margin between slider and arrows 
+  *
+  *******************************************************/
+  margin: 0 10px; 
+}
+
+/**********************************************************************
+*
+* Don't change anything below here unless you know what you're doing 
+*
+***********************************************************************/
+
+.coda-slider-wrapper {
+  /************************************************
+  * 
+  * Wrapper styles 
+  *
+  *************************************************/
+  clear: both;
+  overflow: auto; 
+}
+  
+  .coda-slider-wrapper .coda-slider {
+    /************************************************
+    * 
+    * slider styles 
+    *
+    *************************************************/
+    float: left;
+    overflow: hidden;
+    position: relative; 
+  }
+    
+    .coda-slider-wrapper .coda-slider .panel-container {
+      /************************************************
+      * 
+      * Panel container styles 
+      *
+      *************************************************/
+      position: relative; 
+    }
+      
+      .coda-slider-wrapper .coda-slider .panel-container .panel {
+        /************************************************
+        * 
+        * Panel styles 
+        *
+        *************************************************/
+        display: block;
+        float: left; 
+      }
+  
+  .coda-slider-wrapper .coda-nav {
+    /************************************************
+    * 
+    * Navigation tabs 
+    *
+    *************************************************/ 
+  }
+    
+    .coda-slider-wrapper .coda-nav ul {
+      /************************************************
+      * 
+      * Navigation tabs 
+      *
+      *************************************************/
+      padding:0;
+      clear: both;
+      display: block;
+      margin: auto;
+      overflow: hidden; 
+    }
+      
+      .coda-slider-wrapper .coda-nav ul li {
+        /************************************************
+        * 
+        * Navigation tabs 
+        *
+        *************************************************/
+        display: inline; 
+      }
+        
+        .coda-slider-wrapper .coda-nav ul li a {
+          /************************************************
+          * 
+          * Navigation tabs 
+          *
+          *************************************************/
+          display: block;
+          float: left;
+          text-decoration: none; 
+        }
+  
+  .coda-slider-wrapper .coda-nav-left-arrow, .coda-slider-wrapper .coda-nav-right-arrow {
+    /************************************************
+    * 
+    * Graphical arrows 
+    *
+    *************************************************/
+    cursor: pointer;
+    float: left;
+  }
+    
+    .coda-slider-wrapper .coda-nav-left-arrow a, .coda-slider-wrapper .coda-nav-right-arrow a {
+      /************************************************
+      * 
+      * Graphical arrows 
+      *
+      *************************************************/
+      display: block; 
+    }
+  
+  .coda-slider-wrapper .coda-nav-left, .coda-slider-wrapper .coda-nav-right {
+    /************************************************
+    * 
+    * Html arrows 
+    *
+    *************************************************/
+    float: left; 
+  }
+    
+    .coda-slider-wrapper .coda-nav-left a, .coda-slider-wrapper .coda-nav-right a {
+      /************************************************
+      * 
+      * Html arrow styles 
+      *
+      *************************************************/
+      display: block;
+      text-align: center;
+      text-decoration: none; 
+    }
+  
+  .coda-slider-wrapper .coda-nav-left, .coda-slider-wrapper .coda-nav-left-arrow {
+    /************************************************
+    * 
+    * Html and graphical arrow styles 
+    *
+    *************************************************/
+    clear: both; 
+  }
+
+
+
+
+
+/*Footer*/
+
+  footer {
+    display: inline-block;
+    background-color: #163020;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    margin-top: 0;
+    border-top:  3px solid black;
+    padding-top: 1%;
+}
+
+footer ul {
+    list-style: none;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 0;
+}
+
+footer ul li {
+    display: block;
+    font-size: 20px;
+    margin: 20px 10px;
+    color: whitesmoke;
+}
+
+
+#ful1 {
+    float: left;
+    margin-left: 20%;
+}
+
+#icons li {
+    display: inline;
+}
+
+#icons li a {
+    padding-top: 3px;
+}
+
+.fbIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.lnIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.inIcon {
+    width: 30px;
+    height: 30px;
+}
+
+footer #heartIcon {
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}
+#iconLinks {
+    margin-top: 0%;
+}
+
+footer p {
+    clear: left;
+
+}
+
+footer ul li a {
+
+    color: whitesmoke;
+}
+
+footer li {
+
+    color: whitesmoke;
+}
+
+footer li a {
+    color: whitesmoke;
+}
+footer p{
+    color: whitesmoke;
+}
