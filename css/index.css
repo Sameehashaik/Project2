@@ -1,0 +1,381 @@
+/* Resetting default margin, padding, and setting background color for the body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+}
+
+/* Removing default list styles and adjusting margins and padding for unordered lists */
+ul {
+    list-style: none;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 12px 10px 0 10px;
+}
+
+/* Styling list items as inline elements */
+li {
+    display: inline;
+    margin: 5px 10px;
+    color: white;
+}
+
+/* Styling anchor tags */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Styling the navigation bar */
+nav {
+    margin-top: 0 10px;
+    background-color: #163020; /* Dark green color */
+    font-family: Helvetica, sans-serif;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Ensure navigation bar is above other elements */
+}
+
+/* Hover effect for the brand name in the navigation bar */
+nav h3 a:hover {
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+}
+
+/* Styling for navigation list items */
+nav ul li {
+    color: whitesmoke;
+    padding: 0 20px;
+}
+
+/* Styling for navigation links */
+nav ul li a {
+    color: whitesmoke;
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+}
+
+/* Styling for the brand name in the navigation bar */
+nav h3 {
+    float: left;
+    color: whitesmoke;
+    padding-left: 40px;
+}
+
+/* Styling for unordered lists in the navigation bar */
+nav ul {
+    overflow: auto;
+    text-align: right;
+    padding-top: 25px;
+    padding-right: 50px;
+    font-weight: bold;
+}
+
+/* Styling for the main content */
+main {
+    display: inline-block;
+    margin-top: 0px;
+    background-image: url(../img/img1.jpg); /* Background image for main content */
+    width: 100%;
+    background-size: 100%;
+    height: 800px;
+    text-align: center;
+}
+
+/* Styling for text and heading in main content */
+.imgtxt {
+    color: whitesmoke;
+    text-shadow: 4px 4px 8px #000000;
+}
+
+/* Styling for main heading */
+main h1 {
+    margin-top: 300px;
+    margin-bottom: 0;
+    font-family: Papyrus, fantasy;
+    font-size: 95px;
+}
+
+/* Hover effect for main heading */
+main h1:hover {
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+}
+
+/* Styling for main paragraph */
+main p {
+    padding-top: 0;
+    margin-top: 0;
+    font-family: cursive;
+    font-size: 30px;
+    margin-bottom: 140px;
+}
+
+/* Styling for the footer */
+footer {
+    display: inline-block;
+    border-top: 2px solid black;
+    background-color: #163020; /* Dark green color */
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    margin-top: 0;
+}
+
+/* Styling for the footer list heading */
+#ful1 h3 {
+    text-decoration: underline;
+}
+
+/* Styling for the footer list heading */
+#ful2 h3 {
+    text-decoration: underline;
+}
+
+/* Styling for footer unordered lists */
+footer ul {
+    list-style: none;
+    color: white;
+    display: inline-block;
+    padding: 0;
+}
+
+/* Hover effect for footer links */
+#ful1 li a:hover {
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+}
+
+/* Hover effect for footer links */
+#ful2 li:hover {
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+}
+
+/* Styling for footer list items */
+footer ul li {
+    display: block;
+    font-size: 20px;
+    margin: 20px 10px;
+    color: white;
+}
+
+/* Styling for the first footer list */
+#ful1 {
+    float: left;
+    margin-left: 20%;
+}
+
+/* Styling for social media icons */
+#icons li {
+    display: inline;
+}
+
+/* Styling for social media icon links */
+#icons li a {
+    padding-top: 3px;
+}
+
+/* Styling for Facebook icon */
+.fbIcon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Styling for LinkedIn icon */
+.lnIcon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Styling for Instagram icon */
+.inIcon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Styling for the heart icon in the footer */
+footer #heartIcon {
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}
+
+/* Styling for the icon links in the footer */
+#iconLinks {
+    margin-top: 0%;
+}
+
+/* Styling for paragraph in the footer */
+footer p {
+    clear: left;
+    color: white;
+}
+
+/* Styling for footer links */
+footer ul li a {
+    color: white;
+}
+
+/* Styling for links */
+li a {
+    color: white;
+}
+
+/* Styling for the menu icon */
+#menu_icon {
+    display: none; /* Hide the menu icon by default */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 760px) {
+    /* Hide regular navigation links */
+    nav ul {
+        display: none;
+    }
+
+    /* Styling for the mobile menu */
+    #mobile_menu {
+        text-align: center;
+    }
+
+    /* Resetting margins and padding for mobile menu */
+    #mobile_menu ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Adjusting styles for mobile menu list items */
+    #mobile_menu ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* Adjusting styles for mobile menu links */
+    #mobile_menu ul li a {
+        display: block;
+        padding: 10px;
+        background-color: #163020; /* Dark green color */
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Adjusting styles for footer unordered lists */
+    footer ul {
+        display: block;
+        text-align: center;
+    }
+
+    /* Centering footer lists */
+    #ful1,
+    #ful2 {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Adjusting styles for icon links */
+    #iconLinks {
+        margin-top: 20px;
+    }
+
+    /* Adjusting styles for social media icons */
+    #icons li {
+        margin: 0 10px;
+    }
+
+    /* Styling for the menu icon */
+    #menu_icon {
+        display: block;
+        cursor: pointer;
+        float: left;
+        padding: 10px;
+        color: white;
+        margin-top: 2%;
+        margin-left: 3%;
+    }
+
+    /* Styling for the mobile menu */
+    #mobile_menu {
+        display: none; /* Hide the mobile menu by default */
+        position: absolute;
+        top: 80%; /* Position below the header */
+        left: 0;
+        width: 100%;
+        background-color: #163020; /* Dark green color */
+        z-index: 1000; /* Ensure the menu is above other elements */
+    }
+
+    /* Show the mobile menu when the "show" class is present */
+    #mobile_menu.show {
+        display: block;
+    }
+
+    /* Resetting margins and padding for mobile menu unordered lists */
+    #mobile_menu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    /* Adjusting styles for mobile menu list items */
+    #mobile_menu ul li {
+        margin: 10px 0;
+    }
+
+    /* Adjusting styles for mobile menu links */
+    #mobile_menu ul li a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Adjusted styles for navigation links */
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* Hide individual navigation links */
+    nav ul li {
+        display: none;
+    }
+
+    /* Adjusting background image for smaller screens */
+    main {
+        background-repeat: no-repeat;
+        height: 490px;
+        background-size: cover;
+    }
+
+    /* Adjusting styles for text and heading in main content */
+    .imgtxt {
+        background-size: cover;
+        height: 400px;
+    }
+
+    /* Adjusting styles for main heading */
+    .imgtxt h1 {
+        margin-top: 25%;
+        font-size: 60px;
+    }
+
+    /* Adjusting styles for the grid container in the footer */
+    #gridcontainer {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    /* Adjusting margins for the second footer list */
+    #ful2 {
+        margin-left: 1%;
+    }
+}

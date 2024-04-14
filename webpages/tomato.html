@@ -5,12 +5,16 @@
   <meta charset='utf-8' />
   <meta http-equiv="X-UA-Compatible" content="chrome=1" />
   <meta name="description" content="Codaslider : JQuery Slider Plugin" />
-
+  <script src="/js/index.js"></script>
 
   <link rel="stylesheet" type="text/css" media="screen" href="/css/tomato.css">
 
   <!-- This is just styling for the demo to make it a little less crowded at the top -->
-  <style>h1{margin:100px;}</style>
+  <style>
+    h1 {
+      margin: 100px;
+    }
+  </style>
 
 
   <!-- Coda Slider relies on jQuery and easing effects-->
@@ -19,109 +23,122 @@
 
   <!-- This of course is required. The full version (not .min) is also included in the js directory -->
   <script src="/js/jquery.coda-slider-3.0.min.js"></script>
-    <title>Sunrise Harvest Farms - Tomato</title>
+  <title>Sunrise Harvest Farms - Tomato</title>
 
-<script>
-  $(function(){
+  <script>
+    $(function () {
 
-    /* Here is the slider using default settings */
-    $('#slider-id').codaSlider();
-    /* If you want to adjust the settings, you set an option
-       as follows:
-
-        $('#slider-id').codaSlider({
-          autoSlide:true,
-          autoHeight:false
-        });
-
-    */
-  });
+      /* Here is the slider using default settings */
+      $('#slider-id').codaSlider();
+      /* If you want to adjust the settings, you set an option
+         as follows:
+  
+          $('#slider-id').codaSlider({
+            autoSlide:true,
+            autoHeight:false
+          });
+  
+      */
+    });
 
   </script>
-  </head>
+</head>
 
 <body>
-    <nav>
-        <h3><a href="/index.html">Sunrise Harvest</a></h3>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="page1.html">Vegetables</a></li>
-            <li><a href="page2.html">Fruits</a></li>
-        </ul>
-    </nav>
-    <main id="maindiv"> 
-        <div  class="proddet1">
-          <div class="coda-slider"  id="slider-id">
-            <div>
-              
-              <img src="/img/tomatoes.jpg" alt="Tomato 1" height="600px" width="600px">
-               </div>
-            <div>
-             
-              <img src="/img/broccoli.jpg" alt="Tomato 1" height="600px" width="600px">   </div>
-            <div>
-              
-              <img src="/img/carrots.jpg" alt="Tomato 1" height="600px" width="600px">   </div>
-                </div>
-          <div class="prodtext">
-            <h2>Tomatoes Organic</h2>
-            <h3>Price: $4.55</h3>
-            <h3>Quantity: 2 lb bag</h3>
-            <div>
-            <button class="buy-now">Buy Now</button>
-            <button class="add-to-cart">Add to Cart</button>
-          </div>
-            
-            <ul>
-              <li>Location: Sunrise Harvest Farms, Toronto</li>
-              <li>Delivery Time: 24 Hours</li>
-              <li>Return Policy: Free 7-Day returns</li>
-            </ul>
-          </div>
-        </div>
-        <div class="proddet2">
-          <h2>About the Item</h2>
-          <div>
-          <h4>HEALTH BENEFITS:</h4>
-          <p>  Tomatoes are a source of Vitamin C and K which are factors in the maintenance of bones.</p>
-          <p>  *Based on ~½ large tomato (85g)</p>
-        </div>
-           <p> These organic tomatos are a popular choice for canning or sauces, since they do not have very many seeds. Their medium sized nature also makes them a popular choice for salads.</p>
-        </div>
-      </main>
+  <nav>
+    <div id="menu_icon">&#9776;</div>
+            <h3><a href="/index.html">Sunrise Harvest</a></h3>
+            <div id="mobile_menu">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/webpages/vegetables.html">Vegetables</a></li>
+                    <li><a href="/webpages/fruits.html">Fruits</a></li>
+                    <li><a href="/webpages/registration.html">Register</a></li>
+                    <li><a href="/webpages/aboutUs.html">About Us</a></li>
+                </ul>
+            </div>
+  </nav>
+  <main id="maindiv">
+    <div class="proddet1">
+      <div class="coda-slider" id="slider-id">
+        <div>
 
-<footer>
-    <ul id="ful1">
-        <h3>Contact Us</h3>
-        <li>Call: <a href="cell:1234567890">(123) 456-7890</a></li>
-        <li>Email: <a href="mailto:sunrisefarms@gmail.com">sunrisefarms@gmail.com</a></li>
-    </ul>
-    <ul id="ful2">
-        <h3>Quick Links</h3>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="page1.html">Vegetables</a></li>
-        <li><a href="page2.html">Fruits</a></li>
-    </ul>
+          <img src="/img/tomatoes.jpg" alt="Tomato 1" height="600px" width="600px">
+        </div>
+        <div>
+
+          <img src="/img/broccoli.jpg" alt="Tomato 1" height="600px" width="600px">
+        </div>
+        <div>
+
+          <img src="/img/carrots.jpg" alt="Tomato 1" height="600px" width="600px">
+        </div>
+      </div>
+      <div class="prodtext">
+        <h2>Tomatoes Organic</h2>
+        <h3>Price: $4.55</h3>
+        <h3>Quantity: 2 lb bag</h3>
+        <div>
+          <button class="buy-now">Buy Now</button>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <ul>
+          <li>Location: Sunrise Harvest Farms, Toronto</li>
+          <li>Delivery Time: 24 Hours</li>
+          <li>Return Policy: Free 7-Day returns</li>
+        </ul>
+      </div>
+    </div>
+    <div class="proddet2">
+      <h2>About the Item</h2>
+      <div>
+        <h4>Health Benefits:</h4>
+        <p> Tomatoes are a source of Vitamin C and K which are factors in the maintenance of bones.</p>
+        <p> *Based on ~½ large tomato (85g)</p>
+      </div>
+      <p> These organic tomatos are a popular choice for canning or sauces, since they do not have very many seeds.
+        Their medium sized nature also makes them a popular choice for salads.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div id="gridcontainer">
+      <ul id="ful1">
+          <h3>Contact Us</h3>
+          <li>Call: <a href="cell:1234567890">(123) 456-7890</a></li>
+          <li>Email: <a href="mailto:sunrisefarms@gmail.com">sunrisefarms@gmail.com</a></li>
+      </ul>
+      <ul id="ful2">
+          <h3>Quick Links</h3>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/webpages/vegetables.html">Vegetables</a></li>
+          <li><a href="/webpages/fruits.html">Fruits</a></li>
+          <li><a href="/webpages/registration.html">Register</a></li>
+          <li><a href="/webpages/aboutUs.html">About Us</a></li>
+      </ul>
+  </div>
     <br>
     <p id="iconLinks">Follow us on: </p>
     <ul id="icons">
-        <li><a href="https://www.facebook.com/"><img src="../img/FacebookIcon.png" alt="Facebook Icon"
-                    class="fbIcon"></a></li>
-        <!--Image Source: https://www.iconfinder.com/icons/5282541/fb_social_media_facebook_facebook_logo_social_network_icon-->
-        <li><a href="https://www.linkedin.com/"><img src="../img/LinkedInIcon.png" alt="LinkedIn Icon"
-                    class="lnIcon"></a></li>
-        <!--https://www.iconfinder.com/icons/5282542/linkedin_network_social_network_linkedin_logo_icon-->
-        <li><a href="https://www.instagram.com/"><img src="../img/InstagramIcon.png" alt="Instagram Icon"
-                    class="inIcon"></a></li>
-        <!--Image Source: https://www.iconfinder.com/icons/5282544/camera_instagram_social_media_social_network_instagram_logo_icon-->
+      <li><a href="https://www.facebook.com/"><img src="../img/FacebookIcon.png" alt="Facebook Icon" class="fbIcon"></a>
+      </li>
+      <!--Image Source: https://www.iconfinder.com/icons/5282541/fb_social_media_facebook_facebook_logo_social_network_icon-->
+      <li><a href="https://www.linkedin.com/"><img src="../img/LinkedInIcon.png" alt="LinkedIn Icon" class="lnIcon"></a>
+      </li>
+      <!--https://www.iconfinder.com/icons/5282542/linkedin_network_social_network_linkedin_logo_icon-->
+      <li><a href="https://www.instagram.com/"><img src="../img/InstagramIcon.png" alt="Instagram Icon"
+            class="inIcon"></a></li>
+      <!--Image Source: https://www.iconfinder.com/icons/5282544/camera_instagram_social_media_social_network_instagram_logo_icon-->
 
     </ul>
     <p>Created with <img src="../img/heartIcon.gif" alt="Heart Icon" id="heartIcon"> by <i>Kalwala Siddhartha Reddy &
-            Sameeha Shaik</i> </p>
+        Sameeha Shaik</i> </p>
     <!--Image Source:https://icons8.com/icons/set/heart-animated-->
 
     <p>Copyright &copy; 2024</p>
-</footer>
+  </footer>
 
 </body>
+
 </html>

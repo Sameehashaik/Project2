@@ -3,6 +3,7 @@ body {
   padding: 0;
 
 }
+
 nav ul {
   list-style: none;
   margin-left: 0;
@@ -25,14 +26,15 @@ a {
 
 nav {
   margin-top: 0 10px;
-  background-color: #163020; /* 294B29 */
+  background-color: #163020;
+  /* 294B29 */
   font-family: Helvetica, sans-serif;
   border-bottom: 2px solid black;
   font-size: 20px;
   position: fixed;
   width: 100%;
-   z-index: 1000; 
- 
+  z-index: 1000;
+
 }
 
 nav h3 a:hover {
@@ -45,99 +47,253 @@ nav ul li {
   padding: 0 20px;
 }
 
-nav ul li a{
+nav ul li a {
   color: whitesmoke;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
   text-decoration: none;
   text-shadow: 2px 2px 4px rgb(255, 255, 255, 1);
 }
-nav h3{
+
+nav h3 {
   float: left;
   color: whitesmoke;
   padding-left: 40px;
- 
+
 }
 
-nav ul{
+nav ul {
   overflow: auto;
   text-align: right;
   padding-top: 25px;
   padding-right: 50px;
   font-weight: bold;
 }
-main{
+
+
+main {
   padding-top: 100px;
   padding-left: 50px;
+}
+
+#menu_icon {
+  display: none;
+  /* Hide the menu icon by default */
+}
+
+@media screen and (max-width: 760px) {
+  nav ul {
+    display: none;
+  }
+
+  #mobile_menu {
+    /* display: block; */
+    text-align: center;
+  }
+
+  #mobile_menu ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  #mobile_menu ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #mobile_menu ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #163020;
+    color: white;
+    text-decoration: none;
+  }
+
+  footer ul {
+    display: block;
+    text-align: center;
+  }
+
+  #ful1,
+  #ful2 {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #iconLinks {
+    margin-top: 20px;
+  }
+
+  #icons li {
+    margin: 0 10px;
+  }
+
+  footer p {
+    margin-top: 20px;
+  }
+
+  #menu_icon {
+    display: block;
+    cursor: pointer;
+    float: left;
+    padding: 10px;
+    color: white;
+    margin-top: 2%;
+    margin-left: 3%;
+  }
+
+  #mobile_menu {
+    display: none;
+    /*Hide the mobile menu by default */
+    position: absolute;
+    top: 80%;
+    /* Position below the header */
+    left: 0;
+    width: 100%;
+    background-color: #163020;
+    /* Adjust as needed */
+    z-index: 1000;
+    /* Ensure the menu is above other elements */
+  }
+
+  #mobile_menu.show {
+    display: block;
+    /* Show the mobile menu when the "show" class is present */
+  }
+
+  #mobile_menu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  #mobile_menu ul li {
+    margin: 10px 0;
+  }
+
+  #mobile_menu ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Adjusted styles for the navigation links */
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav ul li {
+    display: none;
+    /* Hide individual navigation links */
+  }
+
+  #gridcontainer {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  #ful2 {
+    margin-left: 1%;
+  }
+
 }
 
 /* CSS styles for the product page */
 
 #maindiv {
-    display: grid;
-    grid-template-rows: auto auto;
-  }
-  
-  .proddet1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  /* .prodimg {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.proddet1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* .prodimg {
     background-color: grey;
   } */
-  
-  .prodtext {
-    margin-left: 50px;
-    margin-top: 50px;
-    padding: 20px;
-    border: 2px solid lightgrey;
-    width: 500px;
-    height: 450px;
-    border-radius: 10px;
-  }
-  .prodtext h2 {
-    font-size: 60px;
-    margin: 0;
-  }
-  .prodtext h3 {
-    font-size: 20px;
-    margin: 5px;
-    padding: 0;
-  }
-  .prodtext div {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  .prodtext button {
-    margin-top: 20px;
-    font-size: 30px;
-    padding: 15px 40px;
-    border-radius: 60px;
-    font-weight: bolder;
-    background-color: #163020;
-    color: whitesmoke;
-    display: block;
-    text-align: center;
-    align-items: center;
-  }
-  .prodtext ul {
-    margin-top: 20px;
-    margin-left: 0;
-    padding-left: 25px;
-    list-style: disc;
-  }
-  .prodtext ul li {
-    font-size: 20px;
-    margin: 5px;
-    padding: 0;
-  }
-  .proddet2 {
-    /* Styles for about the item section */
-  }
-  
 
-  /***********************************************************************
+.prodtext {
+  margin-left: 60px;
+  margin-top: 80px;
+  padding: 30px;
+  border: 5px solid lightgrey;
+  width: 500px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.prodtext h2 {
+  font-size: 50px;
+  margin-top: 30px;
+  margin: 0;
+}
+
+.prodtext h3 {
+  font-size: 20px;
+  margin: 5px;
+  padding: 0;
+}
+
+.prodtext div {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.prodtext button {
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-weight: bolder;
+  background-color: #163020;
+  color: whitesmoke;
+  display: block;
+  text-align: center;
+  align-items: center;
+}
+
+.prodtext ul {
+  margin-top: 50px;
+  margin-left: 0;
+  padding-left: 25px;
+  list-style: disc;
+}
+
+.prodtext ul li {
+  font-size: 20px;
+  margin: 5px;
+  padding: 0;
+}
+
+.proddet2 {
+
+  margin-left: 5%;
+  /* Styles for about the item section */
+}
+
+.proddet2 h2 {
+  font-size: 40px;
+}
+
+.proddet2 h4 {
+  font-size: 30px;
+}
+
+.proddet2 p {
+  font-size: 20px;
+  margin-right: 4%;
+  margin-bottom: 2%;
+}
+
+
+
+
+/***********************************************************************
   jQuery Coda-Slider v3.0 - kevinbatdorf.github.com/codaslider
   Copyright (c) 2012 Kevin Batdorf
   This plugin available for use in all personal or commercial projects under both MIT and GPL licenses.
@@ -164,205 +320,211 @@ css-tricks.com/musings-on-preprocessing/
   * Main wrapper padding 
   *
   *******************************************************/
-  padding: 20px 0; 
+  padding: 20px 0;
 }
-  
-  .coda-slider-wrapper .coda-slider {
-    /******************************************************
+
+.coda-slider-wrapper .coda-slider {
+  /******************************************************
     * 
     * Inner wrapper styles 
     *
     *******************************************************/
-    background: white;
-    /******************************************************
+  background: white;
+  /******************************************************
     * 
     * Width of the container. Typically you will want to 
     * match this with the width of the panel as well. 
     *
     *******************************************************/
-    width: 600px; 
-    
-  }
-    
-    .coda-slider-wrapper .coda-slider .panel {
-      /******************************************************
+  width: 600px;
+
+}
+
+.coda-slider-wrapper .coda-slider .panel {
+  /******************************************************
       * 
       * Width of each individual panel. 
       * Typically you will want to match this with the width 
       * of the container as well. 
       *
       *******************************************************/
-      width: 600px; 
-    }
-      
-      .coda-slider-wrapper .coda-slider .panel .panel-wrapper {
-        /******************************************************
+  width: 600px;
+}
+
+.coda-slider-wrapper .coda-slider .panel .panel-wrapper {
+  /******************************************************
         * 
         * Panel wrapper styles 
         *
         *******************************************************/
-        padding: 0; 
-      }
-  
-  .coda-slider-wrapper .coda-nav {
-    /******************************************************
+  padding: 0;
+}
+
+.coda-slider-wrapper .coda-nav {
+  /******************************************************
     * 
     * Tab styles 
     *
-    *******************************************************/ 
-  }
-    
-    .coda-slider-wrapper .coda-nav .current {
-      /******************************************************
+    *******************************************************/
+}
+
+.coda-slider-wrapper .coda-nav .current {
+  /******************************************************
       * 
       * Current tab styles 
       *
       *******************************************************/
-      background: #0090FF; 
-    }
-    
-    .coda-slider-wrapper .coda-nav a {
-      /******************************************************
+  background: #0090FF;
+}
+
+.coda-slider-wrapper .coda-nav a {
+  /******************************************************
       * 
       * Tab styles 
       *
       *******************************************************/
-      background: #000;
-      color: #fff;
-      margin-right: 1px;
-      padding: 3px 6px; 
-    }
-    
-    .coda-slider-wrapper .coda-nav a:hover {
-      /******************************************************
+  background: #000;
+  color: #fff;
+  margin-right: 1px;
+  padding: 3px 6px;
+}
+
+.coda-slider-wrapper .coda-nav a:hover {
+  /******************************************************
       * 
       * Tab styles 
       *
       *******************************************************/
-      background: #000;
-      color: #fff;
-      text-shadow: none; 
-    }
-  
-  .coda-slider-wrapper .coda-nav-left, .coda-slider-wrapper .coda-nav-right {
-    /******************************************************
+  background: #000;
+  color: #fff;
+  text-shadow: none;
+}
+
+.coda-slider-wrapper .coda-nav-left,
+.coda-slider-wrapper .coda-nav-right {
+  /******************************************************
     * 
     * Arrow Styles 
     *
-    *******************************************************/ 
-  }
-  .coda-nav-left a{
-    background: url(/img/arrow1.png) no-repeat top left;
-    background-size: 35px;
-  }
-  .coda-nav-right a{
-    background: url(/img/arrow2.png) no-repeat top left;
-    background-size: 35px;
-  }
-    
-    .coda-slider-wrapper .coda-nav-left a, .coda-slider-wrapper .coda-nav-right a {
-      /******************************************************
+    *******************************************************/
+}
+
+.coda-nav-left a {
+  background: url(/img/arrow1.png) no-repeat top left;
+  background-size: 35px;
+}
+
+.coda-nav-right a {
+  background: url(/img/arrow2.png) no-repeat top left;
+  background-size: 35px;
+}
+
+.coda-slider-wrapper .coda-nav-left a,
+.coda-slider-wrapper .coda-nav-right a {
+  /******************************************************
       * 
       * Arrow Styles 
       *
       *******************************************************/
-      /* background: #000; */
-      
-      
-      font-size: 0px;
-      padding: 5px;
-      width: 50px; 
-      height: 50px;
-      margin-top: 200px;
-    }
-  
-  .coda-slider-wrapper .coda-nav-left-arrow {
-    /******************************************************
+  /* background: #000; */
+
+
+  font-size: 0px;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  margin-top: 200px;
+}
+
+.coda-slider-wrapper .coda-nav-left-arrow {
+  /******************************************************
     * 
     * Graphical arrow styles 
     *
     *******************************************************/
-    width: 25px;
-    height: 25px;
-    background: url(/img/arrow1.png) no-repeat top left; 
-    margin-top:50px;
-  }
+  width: 25px;
+  height: 25px;
+  background: url(/img/arrow1.png) no-repeat top left;
+  margin-top: 50px;
+}
 
 .coda-slider-wrapper .coda-nav-left-arrow a {
-    /******************************************************
+  /******************************************************
     * 
     * Graphical arrow styles 
     *
     *******************************************************/
-    width: 0;
-    height: 0;
-    border:none;
-    background: url(/img/arrow1.png) no-repeat top left; 
-  }
+  width: 0;
+  height: 0;
+  border: none;
+  background: url(/img/arrow1.png) no-repeat top left;
+}
 
-  .coda-slider-wrapper .coda-nav-left-arrow:hover {
-    /************************************************
+.coda-slider-wrapper .coda-nav-left-arrow:hover {
+  /************************************************
     * 
     * Graphical arrows hover left
     *
     *************************************************/
-    background: url(/img/arrow1.png) no-repeat bottom left; 
-  }
-  
-  .coda-slider-wrapper .coda-nav-right-arrow {
-    /******************************************************
-    * 
-    * Graphical arrow styles 
-    *
-    *******************************************************/
-    width: 25px;
-    height: 25px;
-    background: url(/img/arrow1.png) no-repeat top right; 
-    margin-top:50px;
-  }
-.coda-slider-wrapper .coda-nav-right-arrow a {
-    /******************************************************
-    * 
-    * Graphical arrow styles 
-    *
-    *******************************************************/
-    width: 0;
-    height: 0;
-    background: none; 
-    margin-top:0;
-    border:none;
-  }
+  background: url(/img/arrow1.png) no-repeat bottom left;
+}
 
-  .coda-slider-wrapper .coda-nav-right-arrow:hover {
-    /************************************************
+.coda-slider-wrapper .coda-nav-right-arrow {
+  /******************************************************
+    * 
+    * Graphical arrow styles 
+    *
+    *******************************************************/
+  width: 25px;
+  height: 25px;
+  background: url(/img/arrow1.png) no-repeat top right;
+  margin-top: 50px;
+}
+
+.coda-slider-wrapper .coda-nav-right-arrow a {
+  /******************************************************
+    * 
+    * Graphical arrow styles 
+    *
+    *******************************************************/
+  width: 0;
+  height: 0;
+  background: none;
+  margin-top: 0;
+  border: none;
+}
+
+.coda-slider-wrapper .coda-nav-right-arrow:hover {
+  /************************************************
     * 
     * Graphical arrows hover right
     *
     *************************************************/
-    background: url(/img/arrow1.png) no-repeat bottom right; 
-  }
+  background: url(/img/arrow1.png) no-repeat bottom right;
+}
 
-  .coda-slider-wrapper .coda-nav-left-arrow:active, .coda-slider-wrapper .coda-nav-right-arrow:active {
-    /************************************************
+.coda-slider-wrapper .coda-nav-left-arrow:active,
+.coda-slider-wrapper .coda-nav-right-arrow:active {
+  /************************************************
     * 
     * Graphical arrows active
     *
     *************************************************/
-    margin-top: 55px; 
-  }
-  
-  .coda-slider-wrapper .loading {
-    /******************************************************
+  margin-top: 55px;
+}
+
+.coda-slider-wrapper .loading {
+  /******************************************************
     * 
     * Style for preloader 
     *
     *******************************************************/
-    height: 100%;
-    padding: 20px;
-    text-align: center; 
-  }
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
 
-  
+
 
 
 .arrows .coda-slider {
@@ -371,7 +533,7 @@ css-tricks.com/musings-on-preprocessing/
   * Margin between slider and arrows 
   *
   *******************************************************/
-  margin: 0 10px; 
+  margin: 0 10px;
 }
 
 /**********************************************************************
@@ -387,127 +549,132 @@ css-tricks.com/musings-on-preprocessing/
   *
   *************************************************/
   clear: both;
-  overflow: auto; 
+  overflow: auto;
 }
-  
-  .coda-slider-wrapper .coda-slider {
-    /************************************************
+
+.coda-slider-wrapper .coda-slider {
+  /************************************************
     * 
     * slider styles 
     *
     *************************************************/
-    float: left;
-    overflow: hidden;
-    position: relative; 
-  }
-    
-    .coda-slider-wrapper .coda-slider .panel-container {
-      /************************************************
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.coda-slider-wrapper .coda-slider .panel-container {
+  /************************************************
       * 
       * Panel container styles 
       *
       *************************************************/
-      position: relative; 
-    }
-      
-      .coda-slider-wrapper .coda-slider .panel-container .panel {
-        /************************************************
+  position: relative;
+}
+
+.coda-slider-wrapper .coda-slider .panel-container .panel {
+  /************************************************
         * 
         * Panel styles 
         *
         *************************************************/
-        display: block;
-        float: left; 
-      }
-  
-  .coda-slider-wrapper .coda-nav {
-    /************************************************
+  display: block;
+  float: left;
+}
+
+.coda-slider-wrapper .coda-nav {
+  /************************************************
     * 
     * Navigation tabs 
     *
-    *************************************************/ 
-  }
-    
-    .coda-slider-wrapper .coda-nav ul {
-      /************************************************
+    *************************************************/
+}
+
+.coda-slider-wrapper .coda-nav ul {
+  /************************************************
       * 
       * Navigation tabs 
       *
       *************************************************/
-      padding:0;
-      clear: both;
-      display: block;
-      margin: auto;
-      overflow: hidden; 
-    }
-      
-      .coda-slider-wrapper .coda-nav ul li {
-        /************************************************
+  padding: 0;
+  clear: both;
+  display: block;
+  margin: auto;
+  overflow: hidden;
+}
+
+.coda-slider-wrapper .coda-nav ul li {
+  /************************************************
         * 
         * Navigation tabs 
         *
         *************************************************/
-        display: inline; 
-      }
-        
-        .coda-slider-wrapper .coda-nav ul li a {
-          /************************************************
+  display: inline;
+}
+
+.coda-slider-wrapper .coda-nav ul li a {
+  /************************************************
           * 
           * Navigation tabs 
           *
           *************************************************/
-          display: block;
-          float: left;
-          text-decoration: none; 
-        }
-  
-  .coda-slider-wrapper .coda-nav-left-arrow, .coda-slider-wrapper .coda-nav-right-arrow {
-    /************************************************
+  display: block;
+  float: left;
+  text-decoration: none;
+}
+
+.coda-slider-wrapper .coda-nav-left-arrow,
+.coda-slider-wrapper .coda-nav-right-arrow {
+  /************************************************
     * 
     * Graphical arrows 
     *
     *************************************************/
-    cursor: pointer;
-    float: left;
-  }
-    
-    .coda-slider-wrapper .coda-nav-left-arrow a, .coda-slider-wrapper .coda-nav-right-arrow a {
-      /************************************************
+  cursor: pointer;
+  float: left;
+}
+
+.coda-slider-wrapper .coda-nav-left-arrow a,
+.coda-slider-wrapper .coda-nav-right-arrow a {
+  /************************************************
       * 
       * Graphical arrows 
       *
       *************************************************/
-      display: block; 
-    }
-  
-  .coda-slider-wrapper .coda-nav-left, .coda-slider-wrapper .coda-nav-right {
-    /************************************************
+  display: block;
+}
+
+.coda-slider-wrapper .coda-nav-left,
+.coda-slider-wrapper .coda-nav-right {
+  /************************************************
     * 
     * Html arrows 
     *
     *************************************************/
-    float: left; 
-  }
-    
-    .coda-slider-wrapper .coda-nav-left a, .coda-slider-wrapper .coda-nav-right a {
-      /************************************************
+  float: left;
+}
+
+.coda-slider-wrapper .coda-nav-left a,
+.coda-slider-wrapper .coda-nav-right a {
+  /************************************************
       * 
       * Html arrow styles 
       *
       *************************************************/
-      display: block;
-      text-align: center;
-      text-decoration: none; 
-    }
-  
-  .coda-slider-wrapper .coda-nav-left, .coda-slider-wrapper .coda-nav-left-arrow {
-    /************************************************
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.coda-slider-wrapper .coda-nav-left,
+.coda-slider-wrapper .coda-nav-left-arrow {
+  /************************************************
     * 
     * Html and graphical arrow styles 
     *
     *************************************************/
-    clear: both; 
-  }
+  clear: both;
+}
 
 
 
@@ -515,89 +682,103 @@ css-tricks.com/musings-on-preprocessing/
 
 /*Footer*/
 
-  footer {
-    display: inline-block;
-    background-color: #163020;
-    font-family: Helvetica, sans-serif;
-    text-align: center;
-    height: auto;
-    width: 100%;
-    margin-top: 0;
-    border-top:  3px solid black;
-    padding-top: 1%;
+footer {
+  display: inline-block;
+  border-top: 2px solid black;
+  background-color: #163020;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  margin-top: 0;
+}
+
+#ful1 h3 {
+  text-decoration: underline;
+}
+
+#ful2 h3 {
+  text-decoration: underline;
 }
 
 footer ul {
-    list-style: none;
-    color: whitesmoke;
-    display: inline-block;
-    padding: 0;
+  list-style: none;
+  color: white;
+  display: inline-block;
+  padding: 0;
+}
+
+#ful1 li a:hover {
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255, 1);
+}
+
+#ful2 li:hover {
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255, 1);
 }
 
 footer ul li {
-    display: block;
-    font-size: 20px;
-    margin: 20px 10px;
-    color: whitesmoke;
+  display: block;
+  font-size: 20px;
+  margin: 20px 10px;
+  color: white;
 }
 
-
 #ful1 {
-    float: left;
-    margin-left: 20%;
+  float: left;
+  margin-left: 20%;
 }
 
 #icons li {
-    display: inline;
+  display: inline;
 }
 
 #icons li a {
-    padding-top: 3px;
+  padding-top: 3px;
 }
 
 .fbIcon {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .lnIcon {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .inIcon {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 footer #heartIcon {
-    margin: 0;
-    padding: 0;
-    width: 30px;
-    height: 30px;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
 }
+
 #iconLinks {
-    margin-top: 0%;
+  margin-top: 0%;
 }
 
 footer p {
-    clear: left;
+
+  clear: left;
+  color: white;
+
 
 }
 
 footer ul li a {
 
-    color: whitesmoke;
+  color: white;
 }
 
-footer li {
 
-    color: whitesmoke;
-}
+li a {
 
-footer li a {
-    color: whitesmoke;
-}
-footer p{
-    color: whitesmoke;
+  color: white;
 }

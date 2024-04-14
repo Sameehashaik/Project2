@@ -5,47 +5,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/registration.css">
+    <script src="/js/registration.js"></script>
+    <script src="/js/index.js"></script>
     <title>Registration Page</title>
 </head>
 
 <body>
-    <div id="outer">
-
-        <div id="maindiv">
-            <div id="main1">
-        <header>
-            <h1 id="title-1">Register</h1>
-        </header>
-        <form>
-            <div id="inner-left">
-                <input type="text" class="left" placeholder="First Name" required><br>
-                <select class="left" required>
-                    <option>Select Country</option>
-                    <option>Canada</option>
-                    <option>USA</option>
-                    <option>India</option>
-                    <option>UK</option>
-                </select><br>
-                <input type="email" class="left" placeholder="@Username" required><br>
-                <input type="password" class="left" placeholder="Password" required>
+    <header>
+        <nav>
+            <div id="menu_icon">&#9776;</div>
+            <h3><a href="/index.html">Sunrise Harvest</a></h3>
+            <div id="mobile_menu">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/webpages/vegetables.html">Vegetables</a></li>
+                    <li><a href="/webpages/fruits.html">Fruits</a></li>
+                    <li><a href="/webpages/registration.html">Register</a></li>
+                    <li><a href="/webpages/aboutUs.html">About Us</a></li>
+                </ul>
             </div>
-            <div id="inner-right">
-                <input type="text" class="right" placeholder="Last Name" required><br>
-                <input type="number" class="right" placeholder="123-456-7890" required><br>
-                <input type="email" class="right" placeholder="Confirm Username" required><br>
-                <input type="password" class="right" placeholder="Confirm Password" required>
+        </nav>
+    </header>
+    <main>
+        <div id="outer">
+            <div id="maindiv">
+                <h1 id="title-1">Register</h1>
+                <form>
+                    <div id="gridcontainer">
+                        <div id="inner-left">
+                            <input type="text" class="left" id="first_name" placeholder="First Name" required><br>
+                            <select class="left" id="country" required>
+                                <option>Select Country</option>
+                                <option>Canada</option>
+                                <option>USA</option>
+                                <option>India</option>
+                                <option>UK</option>
+                            </select><br>
+                            <input type="email" class="left" id="username" placeholder="@Username" required><br>
+                            <input type="password" class="left" id="password" placeholder="Password" required>
+                        </div>
+                        <div id="inner-right">
+                            <input type="text" class="right" id="last_name" placeholder="Last Name" required><br>
+                            <input type="tel" class="right" id="phone" placeholder="123-456-7890" required><br>
+                            <input type="email" class="right" id="username2" placeholder="Confirm Username"
+                                required><br>
+                            <input type="password" class="right" id="password2" placeholder="Confirm Password" required>
+                        </div>
+                    </div>
+                    <button type="submit" id="submit">Submit</button>
+                    <button type="reset" id="reset">Reset</button>
+                </form>
             </div>
-        </form>
+            <div id="title-2">
+                <h1>Sunrise Harvest Farms</h1>
+                <p>Cultivating Nature's Finest Bounty</p>
+            </div>
         </div>
-    </div>
-        <div>
-            <h1 id="title-2">Sunrise Harvest Farms</h1>
+    </main>
+    <footer>
+        <div id="footergrid">
+            <ul id="ful1">
+                <h3>Contact Us</h3>
+                <li>Call: <a href="cell:1234567890">(123) 456-7890</a></li>
+                <li>Email: <a href="mailto:sunrisefarms@gmail.com">sunrisefarms@gmail.com</a></li>
+            </ul>
+            <ul id="ful2">
+                <h3>Quick Links</h3>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/webpages/vegetables.html">Vegetables</a></li>
+                <li><a href="/webpages/fruits.html">Fruits</a></li>
+                <li><a href="/webpages/registration.html">Register</a></li>
+                <li><a href="/webpages/aboutUs.html">About Us</a></li>
+            </ul>
         </div>
-    
-
-
-    </div>
-
+        <br>
+        <p id="iconLinks">Follow us on: </p>
+        <ul id="icons">
+            <li><a href="https://www.facebook.com/"><img src="../img/FacebookIcon.png" alt="Facebook Icon"
+                        class="fbIcon"></a></li>
+            <!--Image Source: https://www.iconfinder.com/icons/5282541/fb_social_media_facebook_facebook_logo_social_network_icon-->
+            <li><a href="https://www.linkedin.com/"><img src="../img/LinkedInIcon.png" alt="LinkedIn Icon"
+                        class="lnIcon"></a></li>
+            <!--https://www.iconfinder.com/icons/5282542/linkedin_network_social_network_linkedin_logo_icon-->
+            <li><a href="https://www.instagram.com/"><img src="../img/InstagramIcon.png" alt="Instagram Icon"
+                        class="inIcon"></a></li>
+            <!--Image Source: https://www.iconfinder.com/icons/5282544/camera_instagram_social_media_social_network_instagram_logo_icon-->
+        </ul>
+        <p>Created with <img src="../img/heartIcon.gif" alt="Heart Icon" id="heartIcon"> by <i>Kalwala Siddhartha Reddy
+                &
+                Sameeha Shaik</i> </p>
+        <!--Image Source:https://icons8.com/icons/set/heart-animated-->
+        <p>Copyright &copy; 2024</p>
+    </footer>
 </body>
 
 </html>
