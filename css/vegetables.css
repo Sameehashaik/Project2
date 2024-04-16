@@ -1,32 +1,35 @@
+/* Resetting default margin, padding, and background color */
 body {
     margin: 0;
     padding: 0;
     background-color: lightgrey;
 }
 
+/* Styling for unordered lists */
 ul {
     list-style: none;
     margin-left: 0;
     margin-top: 0;
     padding: 12px 10px 0 10px;
-
 }
 
+/* Styling for list items */
 li {
     display: inline;
     margin: 5px 10px;
     color: white;
-
 }
 
+/* Styling for anchor tags */
 a {
     text-decoration: none;
     color: white;
 }
 
+/* Navigation bar styling */
 nav {
     margin-top: 0 10px;
-    background-color: #163020; /* 294B29 */
+    background-color: #163020; /* Dark green */
     font-family: Helvetica, sans-serif;
     border-bottom: 2px solid black;
     font-size: 20px;
@@ -34,11 +37,14 @@ nav {
     width: 100%;
     z-index: 1000;
 }
+
+/* Hover effect for navigation links */
 nav h3 a:hover {
     text-decoration: none;
     text-shadow: 2px 2px 4px rgb(255, 255, 255, 1);
 }
 
+/* Styling for navigation links */
 nav ul li {
     color: whitesmoke;
     padding: 0 20px;
@@ -47,15 +53,16 @@ nav ul li {
 nav ul li a{
     color: whitesmoke;
 }
+
 nav ul li a:hover{
     text-decoration: none;
     text-shadow: 2px 2px 4px rgb(255, 255, 255, 1);
 }
+
 nav h3{
     float: left;
     color: whitesmoke;
     padding-left: 40px;
-   
 }
 
 nav ul{
@@ -66,6 +73,7 @@ nav ul{
     font-weight: bold;
 }
 
+/* Background image for header */
 header::before {
     content: "";
     background-image: url(../img/img3.jpg);
@@ -77,47 +85,44 @@ header::before {
     left: 0px;
     opacity: 0.75;
     height: 650px;
-    
 }
 
 header {
-
     position: relative;
     margin-top: 0px;
     padding-top: 0;
     text-align: center;
     display: inline-block;
     width: 100%;
-    
-
 }
 
+/* Styling for header content */
 .imgtxt {
     position: relative;
     text-shadow: 4px 4px 8px black;
     color: black;
-
-
 }
 
-.imgtxt h1 a{
-    color: black;
-}
+/* Hover effect for header links */
 
+.imgtxt h1 a {
+    color:black;
+}
 
 .imgtxt a:hover {
     text-decoration: none;
     text-shadow: 2px 2px 4px rgb(255, 255, 255, 1);
 }
 
+/* Styling for header heading */
 header h1 {
     margin-top: 190px;
     margin-bottom: 200px;
-
     font-family: Papyrus, fantasy;
     font-size: 150px;
 }
 
+/* Styling for header paragraph */
 header p {
     padding-top: 0;
     margin-top: 0;
@@ -125,17 +130,17 @@ header p {
     font-size: 30px;
 }
 
-
+/* Main content section */
 main {
-
     display: block;
-
 }
 
+/* Introduction section styling */
 #intro {
     padding: 50px 110px 0px 110px;
 }
 
+/* Introduction image styling */
 #intro img {
     float: right;
     margin-left: 15px;
@@ -144,28 +149,31 @@ main {
     margin-top: 30px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
-
 }
 
+/* Introduction heading styling */
 #intro h2 p {
     overflow: auto;
 }
 
+/* Introduction heading styling */
 #intro h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 40px;
 }
 
+/* Introduction paragraph styling */
 #intro p {
     margin-left: 40px;
     font-size: 25px;
 }
 
-main{
-    display: grid;
-    grid-template-rows: auto auto auto;
+main {
+    display:grid;
+    grid-template-rows: auto auto auto;;
 }
 
+/* Shop section styling */
 #shop {
     text-align: center;
     background-color: #e8e8e8;
@@ -173,6 +181,7 @@ main{
     padding-bottom: 100px;
 }
 
+/* Shop heading styling */
 #shop h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 50px;
@@ -180,19 +189,20 @@ main{
     padding: 50px 0px;
 }
 
-
+/* Shop image styling */
 #shop img {
-
     width: 100%;
     height: 380px;
 }
 
+/* Product image container styling */
 .prodimg {
     background-color: white;
     width: 100%;
     border-radius: 30px 30px 0 0;
 }
 
+/* Product text container styling */
 .prodtxt {
     display: inline-block;
     border-radius: 0 0 30px 30px;
@@ -202,10 +212,9 @@ main{
     height: 115px;
     border-bottom: 1px solid black;
     text-align: left;
-
-
 }
 
+/* Product price styling */
 .prodtxt h4 {
     font-size: 40px;
     margin-top: 10px;
@@ -213,14 +222,15 @@ main{
     padding-left: 15px;
 }
 
+/* Product description styling */
 .prodtxt p {
     font-size: 20px;
     margin-top: 10px;
     padding-left: 20px;
 }
 
+/* Order information styling */
 #orderinfo {
-
     margin-top: 0;
     display: inline-block;
     width: 100%;
@@ -231,18 +241,20 @@ main{
     color:black;
 }
 
+/* Order link styling */
 #orderinfo a{
     color:black;
     font-style: italic;
     font-weight: bold;
 }
 
+/* Hover effect for order link */
 #orderinfo a:hover {
     text-decoration: none;
     text-shadow: 2px 2px 4px rgb(0, 0, 0,1);
 }
 
-
+/* Seeds section styling */
 #seeds {
     text-align: center;
     background-color: #e8e8e8;
@@ -250,26 +262,28 @@ main{
     margin-bottom: 0;
 }
 
+/* Seeds heading styling */
 #seeds h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 50px;
     margin-top: 0;
     padding: 100px 0px 0px 50px;
-
 }
 
-
+/* Seeds image styling */
 #seeds img {
     width: 100%;
     height: 330px;
 }
 
+/* Seed image container styling */
 .seedimg {
     background-color: white;
     width: 100%;
     border-radius: 30px 30px 0 0;
 }
 
+/* Seed text container styling */
 .seedtxt {
     display: inline-block;
     border-radius: 0 0 30px 30px;
@@ -281,6 +295,7 @@ main{
     text-align: left;
 }
 
+/* Seed price styling */
 .seedtxt h4 {
     font-size: 40px;
     margin-top: 10px;
@@ -288,19 +303,21 @@ main{
     padding-left: 15px;
 }
 
+/* Seed description styling */
 .seedtxt p {
     font-size: 20px;
     margin-top: 10px;
     padding-left: 20px;
 }
 
+/* Quick Links section styling */
 #ful1 h3 {
     text-decoration: underline;
 }
 
- #ful2 h3 {
+#ful2 h3 {
     text-decoration: underline;
- }
+}
 
 #ful1 li a:hover {
     text-decoration: none;
@@ -312,6 +329,7 @@ main{
     text-shadow: 2px 2px 4px rgb(255, 255, 255, 1);
 }
 
+/* Footer styling */
 footer {
     display: inline-block;
     background-color: #163020;
@@ -324,6 +342,7 @@ footer {
     padding-top: 1%;
 }
 
+/* Footer unordered list styling */
 footer ul {
     list-style: none;
     color: whitesmoke;
@@ -331,6 +350,7 @@ footer ul {
     padding: 0;
 }
 
+/* Footer list item styling */
 footer ul li {
     display: block;
     font-size: 20px;
@@ -338,12 +358,12 @@ footer ul li {
     color: whitesmoke;
 }
 
-
 #ful1 {
-    float: left;
+    float:left;
     margin-left: 20%;
 }
 
+/* Footer social media icon styling */
 #icons li {
     display: inline;
 }
@@ -352,66 +372,81 @@ footer ul li {
     padding-top: 3px;
 }
 
+/* Facebook icon styling */
 .fbIcon {
     width: 30px;
     height: 30px;
 }
 
+/* LinkedIn icon styling */
 .lnIcon {
     width: 30px;
     height: 30px;
 }
 
+/* Instagram icon styling */
 .inIcon {
     width: 30px;
     height: 30px;
 }
 
+/* Footer heart icon styling */
 footer #heartIcon {
     margin: 0;
     padding: 0;
     width: 30px;
     height: 30px;
 }
+
+/* Icon links styling */
 #iconLinks {
     margin-top: 0%;
 }
 
+/* Footer paragraph styling */
 footer p {
     clear: left;
-
 }
 
+/* Footer link styling */
 footer ul li a {
-
     color: whitesmoke;
 }
 
+/* List item styling */
 li {
-
     color: whitesmoke;
 }
 
+/* Anchor tag styling */
 li a {
     color: whitesmoke;
 }
+
+/* Footer paragraph styling */
 footer p{
     color: whitesmoke;
 }
 
+/* Horizontal line styling */
 hr {
     margin: 0;
 }
 
+/* Vegetables grid styling */
 #vegetables{
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 5%;
     margin: 0 5%;
 }
+
+/* Styling for vegetable links */
 #vegetables a{
     color: black;
 }
+
+/* Vegetable seeds grid styling */
 #vegseeds{
     display: grid;
     grid-template-columns: auto auto;
@@ -419,19 +454,20 @@ hr {
     margin: 30px 5%;
 }
 
+/* Styling for menu icon */
 #menu_icon {
-    display: none;
-    /* Hide the menu icon by default */
+    display: none; /* Hide the menu icon by default */
 }
 
+/* Media query for smaller screens */
 @media screen and (max-width: 760px) {
     nav ul {
         display: none;
         text-align: center;
     }
 
+    /* Mobile menu styling */
     #mobile_menu {
-        /* display: block; */
         text-align: center;
         float: left;
     }
@@ -480,6 +516,7 @@ hr {
         margin-top: 20px;
     }
 
+    /* Show menu icon */
     #menu_icon {
         display: block;
         cursor: pointer;
@@ -490,23 +527,20 @@ hr {
         margin-left: 3%;
     }
 
+    /* Mobile menu styling */
     #mobile_menu {
-        display: none;
-        /*Hide the mobile menu by default */
+        display: none; /* Hide the mobile menu by default */
         position: absolute;
         top: 80%;
-        /* Position below the header */
         left: 0;
         width: 100%;
         background-color: #163020;
-        /* Adjust as needed */
         z-index: 1000;
-        /* Ensure the menu is above other elements */
     }
 
+    /* Show mobile menu when "show" class is present */
     #mobile_menu.show {
         display: block;
-        /* Show the mobile menu when the "show" class is present */
     }
 
     #mobile_menu ul {
@@ -532,10 +566,10 @@ hr {
     }
 
     nav ul li {
-        display: none;
-        /* Hide individual navigation links */
+        display: none; /* Hide individual navigation links */
     }
 
+    /* Background image for header */
     header{
         background-repeat: no-repeat;
         height: 80%;
@@ -543,12 +577,14 @@ hr {
         background-size:cover;
     }
 
+    /* Styling for header content */
     .imgtxt{
         background-size: cover;
         height: 350px;
         margin-bottom: 0;
     }
 
+    /* Styling for header heading */
     .imgtxt h1 {
         margin-top: 40%;
         font-size: 100px;
@@ -594,7 +630,6 @@ hr {
         margin-top: 0%;
         font-size: 40px;
     }
-
 
     #gridcontainer {
         display: grid;

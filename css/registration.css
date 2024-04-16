@@ -1,445 +1,509 @@
+/* CSS Styles */
+
+/* Body styles */
 body {
-    background-color: lightgrey;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: lightgrey; /* Set background color to light grey */
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; /* Specify font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
+/* Unordered list styles */
 ul {
-    list-style: none;
-    margin-left: 0;
-    margin-top: 0;
-    padding: 12px 10px 0 10px;
-
+    list-style: none; /* Remove bullet points */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 0; /* Remove top margin */
+    padding: 12px 10px 0 10px; /* Add padding */
 }
 
+/* List item styles */
 li {
-    display: inline;
-    margin: 5px 10px;
-    color: white;
-
+    display: inline; /* Display list items inline */
+    margin: 5px 10px; /* Add margin around list items */
+    color: white; /* Set text color to white */
 }
 
+/* Anchor tag styles */
 a {
-    text-decoration: none;
-    color: white;
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set link color to white */
 }
 
+/* Header styles */
 header {
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
 }
 
+/* Navigation styles */
 nav {
-    margin-top: 0 10px;
-    background-color: #163020; /* 294B29 */
-    font-family: Helvetica, sans-serif;
-    border-bottom: 2px solid black;
-    font-size: 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    
+    margin-top: 0 10px; /* Set top margin */
+    background-color: #163020; /* Set background color */
+    font-family: Helvetica, sans-serif; /* Specify font family */
+    border-bottom: 2px solid black; /* Add bottom border */
+    font-size: 20px; /* Set font size */
+    position: fixed; /* Fix navigation bar position */
+    width: 100%; /* Set width to 100% */
+    top: 0; /* Align to top */
+    z-index: 1000; /* Set z-index */
 }
+
+/* Hover effect for navigation link */
 nav h3 a:hover {
-    text-decoration: none;
-    text-shadow: 2px 2px 4px rgb(255, 255, 255, 1);
+    text-decoration: none; /* Remove underline on hover */
+    text-shadow: 2px 2px 4px rgb(255, 255, 255, 1); /* Add text shadow on hover */
 }
 
+/* Styles for navigation list items */
 nav ul li {
-    color: whitesmoke;
-    padding: 0 20px;
+    color: whitesmoke; /* Set text color */
+    padding: 0 20px; /* Add padding */
 }
 
-nav ul li a{
-    color: whitesmoke;
-}
-nav ul li a:hover{
-    text-decoration: none;
-    text-shadow: 2px 2px 4px rgb(255, 255, 255, 1);
-}
-nav h3{
-    float: left;
-    color: whitesmoke;
-    padding-left: 40px;
-   
+/* Styles for navigation links */
+nav ul li a {
+    color: whitesmoke; /* Set link color */
 }
 
-nav ul{
-    overflow: auto;
-    text-align: right;
-    padding-top: 25px;
-    padding-right: 50px;
-    font-weight: bold;
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    text-decoration: none; /* Remove underline on hover */
+    text-shadow: 2px 2px 4px rgb(255, 255, 255, 1); /* Add text shadow on hover */
 }
 
+/* Styles for navigation header */
+nav h3 {
+    float: left; /* Float header to the left */
+    color: whitesmoke; /* Set text color */
+    padding-left: 40px; /* Add left padding */
+}
+
+/* Styles for navigation unordered list */
+nav ul {
+    overflow: auto; /* Add overflow */
+    text-align: right; /* Align text to right */
+    padding-top: 25px; /* Add top padding */
+    padding-right: 50px; /* Add right padding */
+    font-weight: bold; /* Set font weight */
+}
+
+/* Container styles */
 #outer {
-    background-color: white;
-    margin: 50px;
-    border-radius: 40px;
-    box-shadow:15px 15px 7px rgba(28, 28, 28, 0.9);
-    display: grid;
-    grid-template-columns: 65% 35%;
-    margin-top: 8%;
+    background-color: white; /* Set background color */
+    margin: 50px; /* Add margin */
+    border-radius: 40px; /* Add border radius */
+    box-shadow: 15px 15px 7px rgba(28, 28, 28, 0.9); /* Add box shadow */
+    display: grid; /* Use grid layout */
+    grid-template-columns: 65% 35%; /* Define grid columns */
+    margin-top: 8%; /* Add top margin */
 }
 
+/* Main div styles */
 #maindiv {
-    margin-right: 0;
-    margin: 10% 15%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 0; /* Reset margin */
+    margin: 10% 15%; /* Add margin */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Specify font family */
 }
 
+/* Title styles */
 #title-1 {
-    font-size: 50px;
-    margin-top: 0;
-    margin-bottom: 10%;
+    font-size: 50px; /* Set font size */
+    margin-top: 0; /* Reset top margin */
+    margin-bottom: 10%; /* Add bottom margin */
 }
 
+/* Grid container styles */
 #gridcontainer {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: grid; /* Use grid layout */
+    grid-template-columns: auto auto; /* Define grid columns */
 }
 
+/* Styles for left inner div */
 #inner-left {
-    float: left;
-    margin-right: 120px;
-    column-gap: 15%;
+    float: left; /* Float left */
+    margin-right: 120px; /* Add right margin */
+    column-gap: 15%; /* Add column gap */
 }
 
+/* Styles for left inner div input elements */
 #inner-left .left {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-bottom: 10%;
-    font-size: 20px;
-    background-color: rgb(234, 233, 233);
-    border: 2px solid rgb(234, 233, 233);
-    border-radius: 4px;
-    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Specify font family */
+    margin-bottom: 10%; /* Add bottom margin */
+    font-size: 20px; /* Set font size */
+    background-color: rgb(234, 233, 233); /* Set background color */
+    border: 2px solid rgb(234, 233, 233); /* Add border */
+    border-radius: 4px; /* Add border radius */
+    color: black; /* Set text color */
 }
 
-::placeholder{
-    color: black;
+/* Placeholder text color */
+::placeholder {
+    color: black; /* Set placeholder text color */
 }
 
+/* Styles for right inner div input elements */
 #inner-right .right {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-bottom: 10%;
-    font-size: 20px;
-    background-color: rgb(234, 233, 233);
-    border: 2px solid rgb(234, 233, 233);
-    border-radius: 4px;
-    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Specify font family */
+    margin-bottom: 10%; /* Add bottom margin */
+    font-size: 20px; /* Set font size */
+    background-color: rgb(234, 233, 233); /* Set background color */
+    border: 2px solid rgb(234, 233, 233); /* Add border */
+    border-radius: 4px; /* Add border radius */
+    color: black; /* Set text color */
 }
 
+/* Button styles */
 button {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border-radius: 4px;
-    border: none;
-    background-color: #2b513a;
-    color: whitesmoke;
-    padding: 10px;
-    width: 100px;
-    margin-top: 5%;
-    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Specify font family */
+    border-radius: 4px; /* Add border radius */
+    border: none; /* Remove border */
+    background-color: #2b513a; /* Set background color */
+    color: whitesmoke; /* Set text color */
+    padding: 10px; /* Add padding */
+    width: 100px; /* Set width */
+    margin-top: 5%; /* Add top margin */
+    font-size: 15px; /* Set font size */
 }
 
+/* Hover effect for button */
 button:hover {
-    text-shadow: 1px 1px 8px rgb(255, 255, 255, 1);
+    text-shadow: 1px 1px 8px rgb(255, 255, 255, 1); /* Add text shadow on hover */
 }
 
-#reset{
-    margin-left: 5%;
+/* Reset button styles */
+#reset {
+    margin-left: 5%; /* Add left margin */
 }
 
+/* Styles for title-2 div */
 #title-2 {
-    background-image: url("/img/veggies-fruits-1.jpeg");
-    height: 620px;
-    width: 500px;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-top: 0;
-    border-radius: 0px 40px 40px 0px;
+    background-image: url("/img/veggies-fruits-1.jpeg"); /* Set background image */
+    height: 620px; /* Set height */
+    width: 500px; /* Set width */
+    margin-bottom: 0; /* Reset bottom margin */
+    margin-top: 0; /* Reset top margin */
+    padding-top: 0; /* Reset top padding */
+    border-radius: 0px 40px 40px 0px; /* Add border radius */
 }
 
+/* Styles for title-2 h1 */
 #title-2 h1 {
-    margin-top: 50%;
-    margin-left: 15%;
-    font-size: xx-large;
-    color: whitesmoke;
+    margin-top: 50%; /* Set top margin */
+    margin-left: 15%; /* Set left margin */
+    font-size: xx-large; /* Set font size */
+    color: whitesmoke; /* Set text color */
 }
 
+/* Styles for title-2 p */
 #title-2 p {
-    font-size: x-large;
-    margin-left: 15%;
-    color: whitesmoke;
+    font-size: x-large; /* Set font size */
+    margin-left: 15%; /* Set left margin */
+    color: whitesmoke; /* Set text color */
 }
 
+/* Styles for footer list heading */
 #ful1 h3 {
-    text-decoration: underline;
+    text-decoration: underline; /* Add underline */
 }
 
+/* Styles for footer list heading */
 #ful2 h3 {
-    text-decoration: underline;
+    text-decoration: underline; /* Add underline */
 }
 
+/* Hover effect for footer list items */
 #ful1 li a:hover {
-    text-decoration: none;
-    text-shadow: 2px 2px 4px rgb(255, 255, 255, 1);
+    text-decoration: none; /* Remove underline on hover */
+    text-shadow: 2px 2px 4px rgb(255, 255, 255, 1); /* Add text shadow on hover */
 }
 
+/* Hover effect for footer list items */
 #ful2 li:hover {
-    text-decoration: none;
-    text-shadow: 2px 2px 4px rgb(255, 255, 255, 1);
+    text-decoration: none; /* Remove underline on hover */
+    text-shadow: 2px 2px 4px rgb(255, 255, 255, 1); /* Add text shadow on hover */
 }
 
+/* Footer styles */
 footer {
-    background-color: #163020;
-    font-family: Helvetica, sans-serif;
-    text-align: center;
-    height: auto;
-    width: 100%;
-    margin-top: 1%;
-    float: left;
-    overflow: auto;
-    border-top: 2px solid black;
+    background-color: #163020; /* Set background color */
+    font-family: Helvetica, sans-serif; /* Specify font family */
+    text-align: center; /* Align text to center */
+    height: auto; /* Set height to auto */
+    width: 100%; /* Set width to 100% */
+    margin-top: 1%; /* Add top margin */
+    float: left; /* Float left */
+    overflow: auto; /* Add overflow */
+    border-top: 2px solid black; /* Add top border */
 }
 
+/* Footer unordered list styles */
 footer ul {
-    list-style: none;
-    color: whitesmoke;
-    display: inline-block;
-    padding: 0;
-
+    list-style: none; /* Remove bullet points */
+    color: whitesmoke; /* Set text color */
+    display: inline-block; /* Display inline-block */
+    padding: 0; /* Remove padding */
 }
 
+/* Footer list item styles */
 footer ul li {
-    display: block;
-    font-size: 20px;
-    margin: 20px 10px;
-    color: whitesmoke;
+    display: block; /* Display block */
+    font-size: 20px; /* Set font size */
+    margin: 20px 10px; /* Add margin */
+    color: whitesmoke; /* Set text color */
 }
 
+/* Styles for ful1 div */
 #ful1 {
-    float: left;
-    margin-left: 20%;
+    float: left; /* Float left */
+    margin-left: 20%; /* Add left margin */
 }
 
+/* Styles for social media icons */
 #icons li {
-    display: inline;
+    display: inline; /* Display inline */
 }
 
+/* Styles for social media icon links */
 #icons li a {
-    padding-top: 3px;
+    padding-top: 3px; /* Add top padding */
 }
 
+/* Styles for Facebook icon */
 .fbIcon {
-    width: 30px;
-    height: 30px;
+    width: 30px; /* Set width */
+    height: 30px; /* Set height */
 }
 
+/* Styles for LinkedIn icon */
 .lnIcon {
-    width: 30px;
-    height: 30px;
+    width: 30px; /* Set width */
+    height: 30px; /* Set height */
 }
 
+/* Styles for Instagram icon */
 .inIcon {
-    width: 30px;
-    height: 30px;
+    width: 30px; /* Set width */
+    height: 30px; /* Set height */
 }
 
+/* Styles for footer heart icon */
 footer #heartIcon {
-    margin: 0;
-    padding: 0;
-    width: 30px;
-    height: 30px;
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    width: 30px; /* Set width */
+    height: 30px; /* Set height */
 }
 
+/* Styles for icon links */
 #iconLinks {
-    margin-top: 0%;
+    margin-top: 0%; /* Reset top margin */
 }
 
+/* Styles for footer paragraph */
 footer p {
-    clear: left;
-    color: whitesmoke;
-
+    clear: left; /* Clear left */
+    color: whitesmoke; /* Set text color */
 }
 
+/* Styles for footer list item links */
 footer ul li a {
-    text-decoration: none;
-    color: whitesmoke;
+    text-decoration: none; /* Remove underline */
+    color: whitesmoke; /* Set text color */
 }
 
+/* Styles for menu icon */
 #menu_icon {
-    display: none;
-    /* Hide the menu icon by default */
+    display: none; /* Hide menu icon by default */
 }
 
+/* Media query for screens with maximum width of 760px */
 @media screen and (max-width: 760px) {
+    /* Styles for mobile navigation */
     nav ul {
-        display: none;
-        text-align: center;
+        display: none; /* Hide navigation links */
+        text-align: center; /* Center-align text */
     }
 
+    /* Styles for mobile menu */
     #mobile_menu {
-        /* display: block; */
-        text-align: center;
+        text-align: center; /* Center-align text */
     }
 
+    /* Styles for mobile menu unordered list */
     #mobile_menu ul {
-        margin: 0;
-        padding: 0;
-        display: grid;
-        grid-template-rows: auto auto auto auto auto;
+        margin: 0; /* Remove margin */
+        padding: 0; /* Remove padding */
+        display: grid; /* Use grid layout */
+        grid-template-rows: auto auto auto auto auto; /* Define grid rows */
     }
 
+    /* Styles for mobile menu list items */
     #mobile_menu ul li {
-        display: block;
-        margin-bottom: 10px;
+        display: block; /* Display block */
+        margin-bottom: 10px; /* Add bottom margin */
     }
 
+    /* Styles for mobile menu list item links */
     #mobile_menu ul li a {
-        display: block;
-        padding: 10px;
-        background-color: #163020;
-        color: white;
-        text-decoration: none;
+        display: block; /* Display block */
+        padding: 10px; /* Add padding */
+        background-color: #163020; /* Set background color */
+        color: white; /* Set text color */
+        text-decoration: none; /* Remove underline */
     }
     
+    /* Styles for main section background image */
     main {
-        background-image: url(/img/veggies-fruits-1.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: url(/img/veggies-fruits-1.jpeg); /* Set background image */
+        background-repeat: no-repeat; /* Prevent background image from repeating */
+        background-size: cover; /* Cover the entire background */
     }
 
+    /* Styles for outer container */
     #outer {
-        display: inline-block;
-        margin-top: 20%;
-        margin-left: 12%;
+        display: inline-block; /* Display as inline-block */
+        margin-top: 20%; /* Add top margin */
+        margin-left: 12%; /* Add left margin */
     }
 
+    /* Styles for maindiv */
     #maindiv {
-        margin: 20px;
-        padding: 10px;
+        margin: 20px; /* Add margin */
+        padding: 10px; /* Add padding */
     }
 
-    #maindiv h1{
-        font-size: 40px;
-        margin-bottom: 5%;
+    /* Styles for h1 in maindiv */
+    #maindiv h1 {
+        font-size: 40px; /* Set font size */
+        margin-bottom: 5%; /* Add bottom margin */
     }
 
+    /* Styles for grid container */
     #gridcontainer {
-        display:grid;
-        font-size: 30px;
+        display: grid; /* Use grid layout */
+        font-size: 30px; /* Set font size */
     }
 
+    /* Styles for inner-left */
     #inner-left {
-        margin-right: 5%;
-        padding-right: 60px;
+        margin-right: 5%; /* Add right margin */
+        padding-right: 60px; /* Add right padding */
     }
 
+    /* Styles for left input elements */
     #inner-left .left {
-        width: 200px;
+        width: 200px; /* Set width */
     }
 
+    /* Styles for right input elements */
     #inner-right .right {
-        width: 200px;
+        width: 200px; /* Set width */
     }
 
-
+    /* Styles for title-2 */
     #title-2 {
-        display: none;
+        display: none; /* Hide title-2 */
     }
 
+    /* Styles for footer */
     footer {
-        margin-top: 0;
-    }
-    footer ul {
-        display: block;
-        text-align: center;
+        margin-top: 0; /* Reset top margin */
     }
 
+    /* Styles for footer unordered list */
+    footer ul {
+        display: block; /* Display block */
+        text-align: center; /* Center-align text */
+    }
+
+    /* Styles for ful1 and ful2 */
     #ful1,
     #ful2 {
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
+        float: none; /* Reset float */
+        margin-left: auto; /* Center-align */
+        margin-right: auto; /* Center-align */
     }
 
+    /* Styles for icon links */
     #iconLinks {
-        margin-top: 20px;
+        margin-top: 20px; /* Add top margin */
     }
 
+    /* Styles for icons list items */
     #icons li {
-        margin: 0 10px;
+        margin: 0 10px; /* Add margin */
     }
 
+    /* Styles for footer paragraph */
     footer p {
-        margin-top: 20px;
+        margin-top: 20px; /* Add top margin */
     }
 
+    /* Styles for menu icon */
     #menu_icon {
-        display: block;
-        cursor: pointer;
-        float: left;
-        padding: 10px;
-        color: white;
-        margin-top: 2%;
-        margin-left: 3%;
+        display: block; /* Display block */
+        cursor: pointer; /* Set cursor to pointer */
+        float: left; /* Float left */
+        padding: 10px; /* Add padding */
+        color: white; /* Set text color */
+        margin-top: 2%; /* Add top margin */
+        margin-left: 3%; /* Add left margin */
     }
 
+    /* Styles for mobile menu */
     #mobile_menu {
-        display: none;
-        /*Hide the mobile menu by default */
-        position: absolute;
-        top: 80%;
-        /* Position below the header */
-        left: 0;
-        width: 100%;
-        background-color: #163020;
-        /* Adjust as needed */
-        z-index: 1000;
-        /* Ensure the menu is above other elements */
+        display: none; /* Hide mobile menu by default */
+        position: absolute; /* Position absolute */
+        top: 80%; /* Set top position */
+        left: 0; /* Set left position */
+        width: 100%; /* Set width to 100% */
+        background-color: #163020; /* Set background color */
+        z-index: 1000; /* Set z-index */
     }
 
+    /* Styles for showing mobile menu */
     #mobile_menu.show {
-        display: block;
-        /* Show the mobile menu when the "show" class is present */
+        display: block; /* Display block */
     }
 
+    /* Styles for mobile menu unordered list */
     #mobile_menu ul {
-        list-style: none;
-        padding: 0;
+        list-style: none; /* Remove bullet points */
+        padding: 0; /* Remove padding */
     }
 
+    /* Styles for mobile menu list items */
     #mobile_menu ul li {
-        margin: 10px 0;
+        margin: 10px 0; /* Add margin */
     }
 
+    /* Styles for mobile menu list item links */
     #mobile_menu ul li a {
-        display: block;
-        padding: 10px;
-        color: white;
-        text-decoration: none;
+        display: block; /* Display block */
+        padding: 10px; /* Add padding */
+        color: white; /* Set text color */
+        text-decoration: none; /* Remove underline */
     }
 
     /* Adjusted styles for the navigation links */
     nav ul {
-        display: flex;
-        justify-content: center;
+        display: flex; /* Display as flex */
+        justify-content: center; /* Center-align */
     }
 
+    /* Styles for individual navigation links */
     nav ul li {
-        display: none;
-        /* Hide individual navigation links */
+        display: none; /* Hide individual navigation links */
     }
 
+    /* Styles for footer grid */
     #footergrid {
-        display: grid;
-        grid-template-columns: auto auto;
+        display: grid; /* Use grid layout */
+        grid-template-columns: auto auto; /* Define grid columns */
     }
     
+    /* Styles for ful2 */
     #ful2 {
-        margin-left: 1%;
+        margin-left: 1%; /* Add left margin */
     }
-
 }

@@ -1,11 +1,15 @@
+/* CSS styles for the body element */
 body {
     background-color: lightgrey;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    /* Resetting default margin, padding, and background color */
     margin: 0;
     padding: 0;
 }
 
+/* CSS styles for unordered lists */
 ul {
+    /* Removing default list styles and setting margin and padding */
     list-style: none;
     margin-left: 0;
     margin-top: 0;
@@ -13,26 +17,36 @@ ul {
 
 }
 
+/* CSS styles for list items */
+
 li {
+    /* Displaying list items inline */
     display: inline;
+    /* Setting margin and color */
     margin: 5px 10px;
     color: white;
 
 }
 
+/* CSS styles for anchor links */
 a {
+    /* Removing default underline and setting text color */
     text-decoration: none;
     color: white;
 }
 
+/* CSS styles for header*/
 header {
     margin: 0;
     padding: 0;
 }
 
+/* CSS styles for navigation bar */
 nav {
+    /* Setting background color, font, border, and positioning */
     margin-top: 0 10px;
-    background-color: #163020; /* 294B29 */
+    background-color: #163020;
+    /* 294B29 */
     font-family: Helvetica, sans-serif;
     border-bottom: 2px solid black;
     font-size: 20px;
@@ -40,33 +54,42 @@ nav {
     width: 100%;
     top: 0;
     z-index: 1000;
-    
+
 }
+
+/* Hover effect for navigation links */
 nav h3 a:hover {
     text-decoration: none;
     text-shadow: 2px 2px 4px rgb(255, 255, 255, 1);
 }
 
+/* CSS styles for navigation list items */
 nav ul li {
     color: whitesmoke;
     padding: 0 20px;
 }
 
-nav ul li a{
+/* CSS styles for navigation links */
+nav ul li a {
     color: whitesmoke;
 }
-nav ul li a:hover{
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
     text-decoration: none;
     text-shadow: 2px 2px 4px rgb(255, 255, 255, 1);
 }
-nav h3{
+
+/* CSS styles for navigation heading */
+nav h3 {
     float: left;
     color: whitesmoke;
     padding-left: 40px;
-   
+
 }
 
-nav ul{
+/* CSS styles for navigation list */
+nav ul {
     overflow: auto;
     text-align: right;
     padding-top: 25px;
@@ -74,7 +97,9 @@ nav ul{
     font-weight: bold;
 }
 
+/* CSS styles for header heading */
 header h1 {
+    /* Centering text, setting font, size, and margin */
     text-align: center;
     font-family: Papyrus, fantasy;
     font-size: 150px;
@@ -84,12 +109,15 @@ header h1 {
     opacity: 1;
 }
 
+/* CSS styles for header anchor links */
 header a {
     color: white;
     text-decoration: none;
 }
 
-#BgImg {
+/* CSS styles for background image */
+.BgImg {
+    /* Setting background image, size, opacity, and border */
     background-image: url("../img/farm_1.jpeg");
     /*Image Source: https://www.pexels.com/photo/corn-plant-on-field-1112080/*/
     height: 700px;
@@ -98,15 +126,18 @@ header a {
     border-bottom: 2px solid black;
 }
 
+/* Hover effect for background image links */
 #BgImg a:hover {
     text-decoration: none;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
     /* color: black; */
 }
+
 main {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
+
 #about h1 {
     font-size: 50px;
     margin-left: 50px;
@@ -127,16 +158,17 @@ main {
     box-shadow: 5px 5px 10px black;
 }
 
-#vegetables  h1 {
+#vegetables h1 {
     font-size: 50px;
     margin-left: 50px;
 }
 
-#vegetables  p {
+#vegetables p {
     font-size: 20px;
     margin-left: 40%;
     margin-right: 4%;
 }
+
 #vegetables {
     clear: both;
     overflow: auto;
@@ -157,6 +189,7 @@ main {
     font-size: 50px;
     margin-left: 50px;
 }
+
 #fruits p {
     font-size: 20px;
     margin-left: 80px;
@@ -176,6 +209,7 @@ main {
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
 }
+
 #ful1 h3 {
     text-decoration: underline;
 }
@@ -306,9 +340,11 @@ footer ul li a {
         color: white;
         text-decoration: none;
     }
+
     #BgImg {
         height: 650px
     }
+
     #BgImg h1 {
         margin-top: 7%;
         font-size: 70px;
@@ -324,7 +360,7 @@ footer ul li a {
         margin-left: 4%;
     }
 
-    #about p{
+    #about p {
         font-size: 20px;
         margin-left: 4%;
         margin-right: 4%;
@@ -341,7 +377,8 @@ footer ul li a {
         font-size: 30px;
         margin-left: 4%;
     }
-    #vegetables p{
+
+    #vegetables p {
         font-size: 20px;
         margin-left: 4%;
         margin-right: 4%;
@@ -358,7 +395,7 @@ footer ul li a {
         margin-left: 4%;
     }
 
-    #fruits p{
+    #fruits p {
         font-size: 20px;
         margin-left: 4%;
         margin-right: 4%;
@@ -448,7 +485,7 @@ footer ul li a {
         display: grid;
         grid-template-columns: auto auto;
     }
-    
+
     #ful2 {
         margin-left: 1%;
     }

@@ -1,7 +1,8 @@
+/* CSS styles for the body element */
 body {
+  /* Resetting default margin, padding, and background color */
   margin: 0;
   padding: 0;
-
 }
 
 nav ul {
@@ -171,7 +172,7 @@ main {
   margin-bottom: 2%;
 }
 
-#maindiv img{
+#maindiv img {
   width: 600px;
   height: 600px;
 }
@@ -794,28 +795,32 @@ li a {
     display: grid;
     grid-template-rows: auto auto;
   }
-  .coda-slider{
+
+  .coda-slider {
     grid-column-start: 0;
     grid-column-end: 2;
   }
-  .prodtext{
+
+  .prodtext {
     grid-column-start: 0;
     grid-column-end: 2;
   }
+
   .coda-slider-wrapper .coda-slider {
-  
+
     width: 500px;
-  
+
   }
-  
+
   .coda-slider-wrapper .coda-slider .panel {
 
     width: 500px;
   }
-  #maindiv img{
+
+  #maindiv img {
     width: 500px;
     height: 500px;
   }
-  
-  
+
+
 }

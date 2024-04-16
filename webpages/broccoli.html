@@ -5,51 +5,54 @@
   <meta charset='utf-8' />
   <meta http-equiv="X-UA-Compatible" content="chrome=1" />
   <meta name="description" content="Codaslider : JQuery Slider Plugin" />
+  <!-- External JavaScript file for index.js -->
   <script src="/js/index.js"></script>
 
+  <!-- External CSS file for tomato.css -->
   <link rel="stylesheet" type="text/css" media="screen" href="/css/tomato.css">
 
-  <!-- This is just styling for the demo to make it a little less crowded at the top -->
+  <!-- Inline styling for demo -->
   <style>
     h1 {
+      /* Add margin for spacing */
       margin: 100px;
     }
   </style>
 
-
-  <!-- Coda Slider relies on jQuery and easing effects-->
+  <!-- jQuery library -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <!-- jQuery easing effects library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-  <!-- This of course is required. The full version (not .min) is also included in the js directory -->
+  <!-- Coda Slider JavaScript file -->
   <script src="/js/jquery.coda-slider-3.0.min.js"></script>
-  <title>Sunrise Harvest Farms - Tomato</title>
+  <title>Sunrise Harvest Farms - Broccoli</title>
 
   <script>
     $(function () {
-
-      /* Here is the slider using default settings */
+      /* Initialize Coda Slider with default settings */
       $('#slider-id').codaSlider();
-      /* If you want to adjust the settings, you set an option
-         as follows:
-  
-          $('#slider-id').codaSlider({
-            autoSlide:true,
-            autoHeight:false
-          });
-  
+      /* If you want to adjust the settings, you set an option as follows:
+         $('#slider-id').codaSlider({
+           autoSlide:true,
+           autoHeight:false
+         });
       */
     });
-
   </script>
 </head>
 
 <body>
+  <!-- Navigation Bar -->
   <nav>
+    <!-- Menu Icon -->
     <div id="menu_icon">&#9776;</div>
+    <!-- Website Title -->
     <h3><a href="/index.html">Sunrise Harvest</a></h3>
+    <!-- Mobile Menu -->
     <div id="mobile_menu">
       <ul>
+        <!-- Navigation Links -->
         <li><a href="/index.html">Home</a></li>
         <li><a href="/webpages/vegetables.html">Vegetables</a></li>
         <li><a href="/webpages/fruits.html">Fruits</a></li>
@@ -58,31 +61,44 @@
       </ul>
     </div>
   </nav>
+
+  <!-- Main Content -->
   <main id="maindiv">
+    <!-- Product Details Section -->
     <div class="proddet1">
+      <!-- Coda Slider Container -->
       <div class="coda-slider" id="slider-id">
+        <!-- Slider Item 1 -->
         <div>
-
-          <img src="/img/broccoli.png" alt="Tomato 1">
+          <!-- Image for Product 1 -->
+          <img src="/img/broccoli.png" alt="Broccoli 1">
         </div>
+        <!-- Slider Item 2 -->
         <div>
-
-          <img src="/img/brocli2.png" alt="Tomato 1">
+          <!-- Image for Product 2 -->
+          <img src="/img/brocli2.png" alt="Broccoli 2">
         </div>
+        <!-- Slider Item 3 -->
         <div>
-
-          <img src="/img/brocli3.png" alt="Tomato 1">
+          <!-- Image for Product 3 -->
+          <img src="/img/brocli3.png" alt="Broccoli 2">
         </div>
       </div>
+      <!-- Product Information -->
       <div class="prodtext">
+        <!-- Product Name -->
         <h2>Broccoli Organic</h2>
+        <!-- Product Price -->
         <h3>Price: $3.86</h3>
+        <!-- Product Quantity -->
         <h3>Quantity: 1</h3>
         <div>
+          <!-- Buy Now Button -->
           <button class="buy-now">Buy Now</button>
+          <!-- Add to Cart Button -->
           <button class="add-to-cart">Add to Cart</button>
         </div>
-
+        <!-- Additional Product Information -->
         <ul>
           <li>Location: Sunrise Harvest Farms, Toronto</li>
           <li>Delivery Time: 24 Hours</li>
@@ -90,30 +106,43 @@
         </ul>
       </div>
     </div>
+    <!-- Product Details Section 2 -->
     <div class="proddet2">
+      <!-- Heading for Item Details -->
       <h2>About the Item</h2>
       <div>
+        <!-- Broccoli Section -->
         <div class="broccoli-section">
+          <!-- Health Benefits Heading -->
           <h4>Health Benefits:</h4>
+          <!-- Health Benefits Information -->
           <p>Broccoli is a nutritional powerhouse, packed with essential vitamins and minerals.</p>
           <p> *Based on 1 cup of chopped broccoli (91g)</p>
         </div>
+        <!-- Additional Information -->
         <p>Broccoli is rich in Vitamin C, an antioxidant that supports immune function and collagen production.</p>
         <p>It is also an excellent source of Vitamin K, which plays a vital role in bone health and blood clotting.</p>
         <p>Moreover, broccoli contains fiber, which aids in digestion and promotes a healthy gut.</p>
-
       </div>
   </main>
 
+  <!-- Footer Section -->
   <footer>
+    <!-- Footer Grid Container -->
     <div id="gridcontainer">
+      <!-- Footer Links Section 1 -->
       <ul id="ful1">
+        <!-- Contact Us Heading -->
         <h3>Contact Us</h3>
-        <li>Call: <a href="cell:1234567890">(123) 456-7890</a></li>
+        <!-- Contact Information -->
+        <li>Call: <a href="tel:1234567890">(123) 456-7890</a></li>
         <li>Email: <a href="mailto:sunrisefarms@gmail.com">sunrisefarms@gmail.com</a></li>
       </ul>
+      <!-- Footer Links Section 2 -->
       <ul id="ful2">
+        <!-- Quick Links Heading -->
         <h3>Quick Links</h3>
+        <!-- Quick Links -->
         <li><a href="/index.html">Home</a></li>
         <li><a href="/webpages/vegetables.html">Vegetables</a></li>
         <li><a href="/webpages/fruits.html">Fruits</a></li>
@@ -122,23 +151,19 @@
       </ul>
     </div>
     <br>
+    <!-- Social Media Icon Links -->
     <p id="iconLinks">Follow us on: </p>
     <ul id="icons">
-      <li><a href="https://www.facebook.com/"><img src="../img/FacebookIcon.png" alt="Facebook Icon" class="fbIcon"></a>
-      </li>
-      <!--Image Source: https://www.iconfinder.com/icons/5282541/fb_social_media_facebook_facebook_logo_social_network_icon-->
-      <li><a href="https://www.linkedin.com/"><img src="../img/LinkedInIcon.png" alt="LinkedIn Icon" class="lnIcon"></a>
-      </li>
-      <!--https://www.iconfinder.com/icons/5282542/linkedin_network_social_network_linkedin_logo_icon-->
-      <li><a href="https://www.instagram.com/"><img src="../img/InstagramIcon.png" alt="Instagram Icon"
-            class="inIcon"></a></li>
-      <!--Image Source: https://www.iconfinder.com/icons/5282544/camera_instagram_social_media_social_network_instagram_logo_icon-->
-
+      <!-- Facebook Icon -->
+      <li><a href="https://www.facebook.com/"><img src="../img/FacebookIcon.png" alt="Facebook Icon" class="fbIcon"></a></li>
+      <!-- LinkedIn Icon -->
+      <li><a href="https://www.linkedin.com/"><img src="../img/LinkedInIcon.png" alt="LinkedIn Icon" class="lnIcon"></a></li>
+      <!-- Instagram Icon -->
+      <li><a href="https://www.instagram.com/"><img src="../img/InstagramIcon.png" alt="Instagram Icon" class="inIcon"></a></li>
     </ul>
-    <p>Created with <img src="../img/heartIcon.gif" alt="Heart Icon" id="heartIcon"> by <i>Kalwala Siddhartha Reddy &
-        Sameeha Shaik</i> </p>
-    <!--Image Source:https://icons8.com/icons/set/heart-animated-->
-
+    <!-- Footer Disclaimer -->
+    <p>Created with <img src="../img/heartIcon.gif" alt="Heart Icon" id="heartIcon"> by <i>Kalwala Siddhartha Reddy & Sameeha Shaik</i> </p>
+    <!-- Copyright Information -->
     <p>Copyright &copy; 2024</p>
   </footer>
 
