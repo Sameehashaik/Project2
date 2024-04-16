@@ -136,9 +136,15 @@ nav ul {
     color: black; /* Set text color */
 }
 
+#country {
+    width: 278px;
+    font-style: italic;
+}
+
 /* Placeholder text color */
 ::placeholder {
     color: black; /* Set placeholder text color */
+    font-style: italic;
 }
 
 /* Styles for right inner div input elements */
