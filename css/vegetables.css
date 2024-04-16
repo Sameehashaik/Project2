@@ -409,6 +409,9 @@ hr {
     column-gap: 5%;
     margin: 0 5%;
 }
+#vegetables a{
+    color: black;
+}
 #vegseeds{
     display: grid;
     grid-template-columns: auto auto;
@@ -424,16 +427,20 @@ hr {
 @media screen and (max-width: 760px) {
     nav ul {
         display: none;
+        text-align: center;
     }
 
     #mobile_menu {
         /* display: block; */
         text-align: center;
+        float: left;
     }
 
     #mobile_menu ul {
         margin: 0;
         padding: 0;
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
     }
 
     #mobile_menu ul li {
@@ -521,7 +528,7 @@ hr {
     /* Adjusted styles for the navigation links */
     nav ul {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     nav ul li {
@@ -597,5 +604,27 @@ hr {
     #ful2 {
         margin-left: 1%;
     }
+    #vegetables{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        row-gap: 50px;
+        padding-left: 0;
+    }
+    #veg1, #veg2, #veg3{
+        grid-column-start: 0;
+        grid-column-end: 3;
+    }
+    #vegseeds{
+        display: grid;
+        grid-template-rows: auto auto;
+        row-gap: 50px;
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 10%;
+    }
+    #seed2, #seed1{
+        grid-column-start: 0;
+        grid-column-end: 3;
 
+    }
 }

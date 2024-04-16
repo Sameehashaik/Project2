@@ -279,6 +279,7 @@ footer ul li a {
 @media screen and (max-width: 760px) {
     nav ul {
         display: none;
+        text-align: center;
     }
 
     #mobile_menu {
@@ -289,6 +290,8 @@ footer ul li a {
     #mobile_menu ul {
         margin: 0;
         padding: 0;
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
     }
 
     #mobile_menu ul li {
@@ -331,7 +334,7 @@ footer ul li a {
         height: 300px;
         width: 300px;
         margin-top: 2%;
-        margin-bottom: 0;
+        margin-bottom: 1%;
     }
 
     #vegetables h1 {
@@ -433,7 +436,7 @@ footer ul li a {
     /* Adjusted styles for the navigation links */
     nav ul {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     nav ul li {

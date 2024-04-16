@@ -82,125 +82,6 @@ main {
   /* Hide the menu icon by default */
 }
 
-@media screen and (max-width: 760px) {
-  nav ul {
-    display: none;
-  }
-
-  #mobile_menu {
-    /* display: block; */
-    text-align: center;
-  }
-
-  #mobile_menu ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  #mobile_menu ul li {
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  #mobile_menu ul li a {
-    display: block;
-    padding: 10px;
-    background-color: #163020;
-    color: white;
-    text-decoration: none;
-  }
-
-  footer ul {
-    display: block;
-    text-align: center;
-  }
-
-  #ful1,
-  #ful2 {
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #iconLinks {
-    margin-top: 20px;
-  }
-
-  #icons li {
-    margin: 0 10px;
-  }
-
-  footer p {
-    margin-top: 20px;
-  }
-
-  #menu_icon {
-    display: block;
-    cursor: pointer;
-    float: left;
-    padding: 10px;
-    color: white;
-    margin-top: 2%;
-    margin-left: 3%;
-  }
-
-  #mobile_menu {
-    display: none;
-    /*Hide the mobile menu by default */
-    position: absolute;
-    top: 80%;
-    /* Position below the header */
-    left: 0;
-    width: 100%;
-    background-color: #163020;
-    /* Adjust as needed */
-    z-index: 1000;
-    /* Ensure the menu is above other elements */
-  }
-
-  #mobile_menu.show {
-    display: block;
-    /* Show the mobile menu when the "show" class is present */
-  }
-
-  #mobile_menu ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  #mobile_menu ul li {
-    margin: 10px 0;
-  }
-
-  #mobile_menu ul li a {
-    display: block;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-  }
-
-  /* Adjusted styles for the navigation links */
-  nav ul {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  nav ul li {
-    display: none;
-    /* Hide individual navigation links */
-  }
-
-  #gridcontainer {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-
-  #ful2 {
-    margin-left: 1%;
-  }
-
-}
-
 /* CSS styles for the product page */
 
 #maindiv {
@@ -288,6 +169,11 @@ main {
   font-size: 20px;
   margin-right: 4%;
   margin-bottom: 2%;
+}
+
+#maindiv img{
+  width: 600px;
+  height: 600px;
 }
 
 
@@ -781,4 +667,155 @@ footer ul li a {
 li a {
 
   color: white;
+}
+
+
+@media screen and (max-width: 760px) {
+  nav ul {
+    display: none;
+    text-align: center;
+  }
+
+  #mobile_menu {
+    /* display: block; */
+    text-align: center;
+  }
+
+  #mobile_menu ul {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+  }
+
+  #mobile_menu ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #mobile_menu ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #163020;
+    color: white;
+    text-decoration: none;
+  }
+
+  footer ul {
+    display: block;
+    text-align: center;
+  }
+
+  #ful1,
+  #ful2 {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #iconLinks {
+    margin-top: 20px;
+  }
+
+  #icons li {
+    margin: 0 10px;
+  }
+
+  footer p {
+    margin-top: 20px;
+  }
+
+  #menu_icon {
+    display: block;
+    cursor: pointer;
+    float: left;
+    padding: 10px;
+    color: white;
+    margin-top: 2%;
+    margin-left: 3%;
+  }
+
+  #mobile_menu {
+    display: none;
+    /*Hide the mobile menu by default */
+    position: absolute;
+    top: 80%;
+    /* Position below the header */
+    left: 0;
+    width: 100%;
+    background-color: #163020;
+    /* Adjust as needed */
+    z-index: 1000;
+    /* Ensure the menu is above other elements */
+  }
+
+  #mobile_menu.show {
+    display: block;
+    /* Show the mobile menu when the "show" class is present */
+  }
+
+  #mobile_menu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  #mobile_menu ul li {
+    margin: 10px 0;
+  }
+
+  #mobile_menu ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Adjusted styles for the navigation links */
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    display: none;
+    /* Hide individual navigation links */
+  }
+
+  #gridcontainer {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  #ful2 {
+    margin-left: 1%;
+  }
+
+  .proddet1 {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+  .coda-slider{
+    grid-column-start: 0;
+    grid-column-end: 2;
+  }
+  .prodtext{
+    grid-column-start: 0;
+    grid-column-end: 2;
+  }
+  .coda-slider-wrapper .coda-slider {
+  
+    width: 500px;
+  
+  }
+  
+  .coda-slider-wrapper .coda-slider .panel {
+
+    width: 500px;
+  }
+  #maindiv img{
+    width: 500px;
+    height: 500px;
+  }
+  
+  
 }
