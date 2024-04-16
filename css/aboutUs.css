@@ -116,7 +116,7 @@ header a {
 }
 
 /* CSS styles for background image */
-.BgImg {
+#BgImg {
     /* Setting background image, size, opacity, and border */
     background-image: url("../img/farm_1.jpeg");
     /*Image Source: https://www.pexels.com/photo/corn-plant-on-field-1112080/*/
